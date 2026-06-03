@@ -138,6 +138,27 @@ a{color:inherit;}
 .mkt .src{font-size:10.5px;color:var(--g4);margin-top:8px;}
 @media(max-width:860px){.mkt{grid-template-columns:1fr;}}
 
+/* USE LIST */
+.uses{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.uses .u{background:#fff;border:1px solid var(--line);border-radius:7px;padding:18px 20px;}
+.uses .u .ut{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+.uses .u .ut:before{content:"";width:8px;height:8px;border-radius:2px;background:var(--gold);flex:none;}
+.uses .u .ud{font-size:12.5px;color:var(--g6);line-height:1.8;}
+.uses-no{margin-top:14px;font-size:12.5px;color:var(--g6);background:#fff;border:1px solid var(--line);border-left:3px solid #C0364A;border-radius:6px;padding:14px 18px;}
+@media(max-width:860px){.uses{grid-template-columns:1fr;}}
+
+/* PRICE BUILD-UP */
+.calc{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+.calc .cell{flex:1 1 0;min-width:140px;padding:20px 18px;text-align:center;border-right:1px solid var(--line);}
+.calc .cell:last-child{border-right:none;}
+.calc .cell.res{background:#FBF6EC;}
+.calc .op{flex:0 0 38px;display:flex;align-items:center;justify-content:center;font-family:var(--en);font-size:24px;color:var(--gold);font-weight:700;}
+.calc .lab{font-size:11.5px;color:var(--g6);margin-bottom:8px;line-height:1.5;}
+.calc .val{font-size:19px;font-weight:800;color:var(--navy);}
+.calc .res .val{font-family:var(--en);font-size:28px;color:var(--gold);}
+.calc .res .lab{color:var(--gold);font-weight:700;}
+@media(max-width:760px){.calc .op{flex-basis:100%;height:24px;transform:rotate(90deg);}.calc .cell{border-right:none;border-bottom:1px solid var(--line);}}
+
 /* ACCESS */
 .map-feature{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin-bottom:34px;box-shadow:0 18px 50px -26px rgba(34,48,92,.28);}
 .map-feature img{width:100%;display:block;}
@@ -310,20 +331,31 @@ a{color:inherit;}
   <div class="wrap">
     <div class="sec-l">Development &amp; Investment</div>
     <div class="sec-t">活用・開発の可能性</div>
-    <div class="sec-d">取得後の事業形態（自社開発・運営、賃貸、開発分譲、ファンド組成）は買主様の戦略に応じてご検討いただけます。</div>
-    <div class="aud">
-      <div class="c"><div class="k">CARE &amp; MEDICAL</div><div class="t">介護・医療事業者の皆さまへ</div><div class="d">駅徒歩1分・近隣に医療機関を擁する立地。容積率300%を活かし、最大 約120床規模の施設新築（住宅型有料老人ホーム等）も計画可能。小規模からの段階開発にも対応できます。</div></div>
-      <div class="c"><div class="k">DEVELOPERS</div><div class="t">不動産会社・デベロッパーの皆さまへ</div><div class="d">敷地約579坪・容積フル活用時の延床は約1,360〜1,720坪。商業・住宅・複合用途の開発適地として、まとまった規模で計画いただけます。開発分譲・賃貸の両面で検討可能。</div></div>
-      <div class="c"><div class="k">INVESTORS &amp; FUNDS</div><div class="t">国内外の投資ファンドの皆さまへ</div><div class="d">札幌都心へJRで約25〜30分の駅前用地。所有権・更地のため取得後の開発・組成の自由度が高い案件です。ヘルスケア／レジデンシャル開発を検討される投資家のご相談に対応します。</div></div>
+    <div class="sec-d">近隣商業地域・容積率300%・約579坪。用途の自由度が高く、介護・医療に限らず、住宅・商業・宿泊・オフィス・教育など幅広い開発に対応できる土地です。取得後の事業形態（自社開発・運営／賃貸／開発分譲／ファンド組成）も買主様の戦略に応じて選択いただけます。</div>
+
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:0 0 14px;">開発可能な主な用途（近隣商業地域）</h3>
+    <div class="uses">
+      <div class="u"><div class="ut">住宅・共同住宅</div><div class="ud">分譲・賃貸マンション、サービス付き高齢者向け住宅、寄宿舎・社宅 等</div></div>
+      <div class="u"><div class="ut">店舗・商業施設</div><div class="ud">スーパー、物販店、複合商業、ドラッグストア（床面積の制限なく計画可）</div></div>
+      <div class="u"><div class="ut">飲食・サービス店舗</div><div class="ud">レストラン、カフェ、各種サービス店舗、銀行・クリニックモール 等</div></div>
+      <div class="u"><div class="ut">事務所・オフィス</div><div class="ud">オフィスビル、サテライトオフィス、コワーキング 等</div></div>
+      <div class="u"><div class="ut">宿泊施設</div><div class="ud">ホテル・旅館、サービスアパートメント 等</div></div>
+      <div class="u"><div class="ut">医療・福祉</div><div class="ud">病院・診療所、有料老人ホーム（住宅型・ホスピス型）、介護施設、保育所・こども園 等</div></div>
+      <div class="u"><div class="ut">教育・文化</div><div class="ud">学校、専門学校、学習塾、図書館・文化施設 等</div></div>
+      <div class="u"><div class="ut">スポーツ・娯楽</div><div class="ud">フィットネス、スイミング、ボウリング、カラオケ、ゴルフ練習場 等</div></div>
+      <div class="u"><div class="ut">その他</div><div class="ud">立体駐車場、倉庫、小規模な作業所、複数用途を組み合わせた複合開発 等</div></div>
     </div>
-    <table class="spec" style="margin-bottom:22px;">
-      <tr><th>計画可能規模（最大）</th><td>容積フル活用時 延床 <strong>約1,360〜1,720坪（約4,500〜5,700㎡）</strong>／中層（目安4〜6階）で計画可能</td></tr>
-      <tr><th>想定用途</th><td>介護・医療施設／商業施設／共同住宅／複合用途 ほか（用途地域の制限に準ずる）</td></tr>
-      <tr><th>取得後の事業形態</th><td>自社開発・運営／賃貸／開発分譲／ファンド組成 等（買主様にて選択）</td></tr>
-    </table>
-    <div class="engbox">
+    <div class="uses-no">※ 近隣商業地域では上記のように幅広い用途が建築可能です。一方、キャバレー・料理店等の接待飲食・風俗営業、危険物を扱う大規模工場など建築できない用途もあります。具体的な用途の可否・規模・必要許認可は、建築基準法・関係条例・行政協議により最終確認が必要です。</div>
+
+    <div class="aud" style="margin-top:30px;">
+      <div class="c"><div class="k">OPERATORS</div><div class="t">事業者の皆さまへ</div><div class="d">施設・店舗・住宅・宿泊など、事業に合わせた新築計画が可能。容積率300%を活かした規模設計、小規模からの段階開発にも対応できます。介護・医療事業者向けには基本設計（64床）も用意があります。</div></div>
+      <div class="c"><div class="k">DEVELOPERS</div><div class="t">不動産会社・デベロッパーの皆さまへ</div><div class="d">敷地約579坪・容積フル活用時の延床は約1,360〜1,720坪。商業・住宅・複合用途の開発適地として、まとまった規模で計画いただけます。開発分譲・賃貸の両面で検討可能。</div></div>
+      <div class="c"><div class="k">INVESTORS &amp; FUNDS</div><div class="t">国内外の投資ファンドの皆さまへ</div><div class="d">札幌都心へJRで約25〜30分の駅前用地。所有権・更地のため取得後の開発・組成の自由度が高い案件です。レジデンシャル／ヘルスケア／商業など、各種開発スキームのご相談に対応します。</div></div>
+    </div>
+
+    <div class="engbox" style="margin-top:30px;">
       <div class="k">English Summary &mdash; For Overseas Investors</div>
-      <p>Development land for sale in Sapporo, Hokkaido, Japan. One-minute walk from JR &ldquo;Ainosato-Kyoikudai&rdquo; Station (approx. 25&ndash;30 min to Sapporo Station). Site area approx. 1,913.31&nbsp;m&sup2; (approx. 579&nbsp;tsubo), neighborhood-commercial zoning, FAR 300% / building coverage 80%, freehold, vacant lot. Asking price <strong>JPY 110,000,000</strong>. Suitable for care/medical facilities, residential or commercial development, or fund-led projects. Please contact us below for details.</p>
+      <p>Development land for sale in Sapporo, Hokkaido, Japan. One-minute walk from JR &ldquo;Ainosato-Kyoikudai&rdquo; Station (approx. 25&ndash;30 min to Sapporo Station). Site area approx. 1,913.31&nbsp;m&sup2; (approx. 579&nbsp;tsubo), neighborhood-commercial zoning, FAR 300% / building coverage 80%, freehold, vacant lot. Asking price <strong>JPY 110,000,000</strong>. The zoning permits a wide range of uses &mdash; residential, retail/commercial, office, hotel, medical/welfare, education and more &mdash; suitable for owner-development, leasing, subdivision or fund-led projects. Please contact us below for details.</p>
     </div>
     <p class="note">※ 規模・用途・収益等の記載は計画上の目安であり、実現性・採算を保証するものではありません。投資判断はお客様ご自身の責任で行ってください。本ページは投資勧誘を目的とするものではありません。</p>
   </div>
@@ -336,7 +368,7 @@ a{color:inherit;}
     <div class="sec-t">開発スケール・<span class="n">市況データ</span></div>
     <div class="sec-d">容積率300%・約579坪のポテンシャルを、規模レンジと市況データで整理しました。事業者・投資家の検討材料としてご活用ください。</div>
 
-    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:0 0 14px;">計画規模レンジ（最小〜標準〜最大）</h3>
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:0 0 14px;">計画規模レンジ（最小〜標準〜最大）<span style="font-weight:400;font-size:12px;color:var(--g5);">　※床数は高齢者施設を例とした規模感です</span></h3>
     <div class="cmp-wrap">
     <table class="cmp">
       <thead><tr><th style="background:var(--cream);"></th><th>MINIMUM<small>最小規模</small></th><th class="hi">STANDARD<small>標準（基本設計準拠）</small></th><th>MAXIMUM<small>容積フル活用</small></th></tr></thead>
@@ -387,7 +419,41 @@ a{color:inherit;}
         <div class="src">出典：建設物価・着工統計に基づく概算</div>
       </div>
     </div>
-    <p class="note">※ 掲載の地価・建築費・規模・費用等は、公的データおよび計画上の想定に基づく参考情報であり、正式な不動産鑑定評価・確定見積ではありません。将来の価格・収益・採算を保証するものではなく、投資勧誘を目的とするものでもありません。投資判断はお客様ご自身の責任で行ってください。最新の数値・詳細条件は取扱不動産会社へご確認ください。</p>
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:36px 0 14px;">価格の考え方（参考）</h3>
+    <div class="calc">
+      <div class="cell"><div class="lab">近隣商業地域<br>補正後 坪単価</div><div class="val">22〜28<span style="font-size:12px;font-weight:600;">万円/坪</span></div></div>
+      <div class="op">×</div>
+      <div class="cell"><div class="lab">駅1分・容積300%<br>需給プレミアム</div><div class="val">+10〜25<span style="font-size:12px;font-weight:600;">%</span></div></div>
+      <div class="op">×</div>
+      <div class="cell"><div class="lab">敷地面積</div><div class="val">579<span style="font-size:12px;font-weight:600;">坪</span></div></div>
+      <div class="op">=</div>
+      <div class="cell res"><div class="lab">市況に基づく参考推計</div><div class="val">約1.65億円</div></div>
+    </div>
+    <p class="note">※ 上記は公示地価・建築費等の公的データと市況を踏まえた<strong>自社の参考推計</strong>であり、正式な不動産鑑定評価ではありません。<strong>本物件の販売価格は、市場環境等を考慮した 11,000万円（坪単価 約19.0万円/坪）</strong>です。推計値は将来の価格・売却額を保証するものではありません。</p>
+
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:36px 0 14px;">建設コスト指数（RC造）10年推移</h3>
+    <p style="font-size:13px;color:var(--g6);line-height:1.9;margin-bottom:14px;max-width:780px;">主要な市場指標（為替・資源・株価・金利）を加重統合し、建築・設備単価を補正した自社指数（MCI／RC造）です。基準：2022-04-01 = 1.000。建設コストの上昇圧力の推移を示す参考指標で、土地取得コストにも波及します。</p>
+    <div class="cmp-wrap">
+    <table class="cmp" style="font-size:12.5px;">
+      <thead><tr><th style="background:var(--cream);color:var(--g6);">年</th><th>USD/JPY</th><th>鋼材指数<small>2022=100</small></th><th>Brent<small>$/bbl</small></th><th>日経平均<small>円</small></th><th>長期金利<small>%</small></th><th>MCI<small>RC造</small></th><th>水準</th></tr></thead>
+      <tbody>
+        <tr><th>2016</th><td>108.8</td><td>55</td><td>45.1</td><td>19,114</td><td>-0.07</td><td>0.855</td><td>−14.5%</td></tr>
+        <tr><th>2017</th><td>112.2</td><td>68</td><td>54.4</td><td>22,765</td><td>0.05</td><td>0.882</td><td>−11.8%</td></tr>
+        <tr><th>2018</th><td>110.4</td><td>83</td><td>71.3</td><td>20,015</td><td>0.01</td><td>0.908</td><td>−9.2%</td></tr>
+        <tr><th>2019</th><td>109.0</td><td>76</td><td>64.2</td><td>23,657</td><td>-0.02</td><td>0.875</td><td>−12.5%</td></tr>
+        <tr><th>2020</th><td>106.8</td><td>65</td><td>43.3</td><td>27,444</td><td>0.02</td><td>0.822</td><td>−17.8%</td></tr>
+        <tr><th>2021</th><td>110.0</td><td>95</td><td>70.9</td><td>28,791</td><td>0.07</td><td>0.912</td><td>−8.8%</td></tr>
+        <tr class="hi"><th>2022 ★基準</th><td>125.0</td><td>100</td><td>105.0</td><td>27,500</td><td>0.25</td><td>1.000</td><td>基準</td></tr>
+        <tr><th>2023</th><td>140.5</td><td>88</td><td>82.5</td><td>33,464</td><td>0.62</td><td>1.082</td><td>+8.2%</td></tr>
+        <tr><th>2024</th><td>153.2</td><td>84</td><td>80.0</td><td>39,894</td><td>1.10</td><td>1.158</td><td>+15.8%</td></tr>
+        <tr><th>2025</th><td>152.0</td><td>108</td><td>75.0</td><td>50,339</td><td>1.52</td><td>1.198</td><td>+19.8%</td></tr>
+        <tr class="hi"><th>2026.03 ★現在</th><td>157.5</td><td>135.5</td><td>84.1</td><td>54,890</td><td>2.18</td><td><strong>1.230</strong></td><td><strong style="color:#2E7D46;">+23.0%</strong></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">読み方：MCI(RC)が1.000を超えるほど、基準（2022年4月）より建設コスト上昇圧力が強い状態です。現在の1.230は基準比 +23.0% の上昇圧力を示します。実勢の見積単価への反映は数ヶ月のタイムラグを伴い、正式見積は設計・施工会社により確定します。鋼材指数はHRC先物ベース、長期金利は10年国債利回り。MCI(RC)は自社算出の参考指標です。</p>
+
+    <p class="note">※ 掲載の地価・建築費・規模・費用・指数等は、公的データおよび自社の想定・推計に基づく参考情報であり、正式な不動産鑑定評価・確定見積ではありません。将来の価格・収益・採算を保証するものではなく、投資勧誘を目的とするものでもありません。投資判断はお客様ご自身の責任で行ってください。最新の数値・詳細条件は取扱不動産会社へご確認ください。</p>
   </div>
 </section>
 
