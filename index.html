@@ -4,169 +4,170 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>あいの里教育大駅前 開発用地 11,000万円｜駅徒歩1分・容積率300%・約579坪｜株式会社ウェルト</title>
-<meta name="description" content="JR「あいの里教育大」駅 徒歩1分。容積率300%・敷地約579坪・所有権・更地。札幌・あいの里の駅前開発用地。価格11,000万円。介護・医療施設、商業・住宅開発、投資用地に。取扱：株式会社ウェルト。">
+<meta name="description" content="JR「あいの里教育大」駅 徒歩1分。容積率300%・敷地約579坪・所有権・更地。札幌市北区南あいの里の駅前開発用地。価格11,000万円。介護・医療施設、商業・住宅開発、投資用地に。取扱：株式会社ウェルト。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#1F2A52;--navy-d:#121930;--gold:#B8924A;--gold-l:#CBA968;--gold-pale:#F9F5EC;--gold-border:rgba(184,146,74,.32);
---white:#fff;--black:#161616;--g7:#3f3f3f;--g6:#666;--g5:#888;--g4:#a3a3a3;--g3:#ccc;--g2:#e4e4e2;--g1:#f6f6f3;
+:root{
+--navy:#22305C;--navy-d:#19244A;--gold:#B0883E;--gold-l:#C49A4E;
+--cream:#FAF7F1;--cream2:#F4EFE5;--paper:#FFFFFF;
+--ink:#1E2024;--g7:#43474E;--g6:#6A6E76;--g5:#8C9098;--g4:#AEB1B7;
+--line:#E9E3D6;--line2:#EFEAE0;
 --jp:'Noto Sans JP',sans-serif;--en:'Cormorant Garamond',serif;--es:'Inter',sans-serif;}
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--jp);color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.85;font-size:15px;overflow-x:hidden;}
+body{font-family:var(--jp);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.85;font-size:15px;overflow-x:hidden;}
 a{color:inherit;}
-.wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px;}
 
-/* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(18,25,48,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);}
-.nav-inner{max-width:1140px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+/* NAV (light) */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 32px;height:66px;display:flex;align-items:center;justify-content:space-between;}
 .nav-brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;}
-.nav-brand .w{font-family:var(--en);font-size:25px;font-weight:700;color:var(--gold-l);letter-spacing:1px;line-height:1;}
-.nav-brand .nm{font-size:13px;font-weight:700;color:#fff;letter-spacing:.5px;}
+.nav-brand .w{font-family:var(--en);font-size:26px;font-weight:700;color:var(--gold);letter-spacing:1px;line-height:1;}
+.nav-brand .nm{font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.5px;}
 .nav-r{display:flex;align-items:center;gap:22px;}
-.nav-price{font-family:var(--en);font-size:19px;font-weight:700;color:#fff;letter-spacing:.5px;}
-.nav-price small{font-family:var(--jp);font-size:11px;color:rgba(255,255,255,.55);margin-right:4px;}
-.nav-cta{background:var(--gold);color:#fff!important;text-decoration:none;font-size:13px;font-weight:700;padding:10px 22px;border-radius:2px;transition:.2s;}
-.nav-cta:hover{background:var(--gold-l);}
+.nav-price{font-family:var(--en);font-size:20px;font-weight:700;color:var(--navy);letter-spacing:.5px;}
+.nav-price small{font-family:var(--jp);font-size:11px;color:var(--g5);margin-right:4px;}
+.nav-cta{background:var(--navy);color:#fff!important;text-decoration:none;font-size:13px;font-weight:700;padding:10px 22px;border-radius:3px;transition:.2s;}
+.nav-cta:hover{background:var(--navy-d);}
 @media(max-width:640px){.nav-price{display:none;}}
 
-/* HERO */
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;
-background:linear-gradient(180deg,rgba(15,20,40,.62) 0%,rgba(15,20,40,.55) 45%,rgba(13,17,34,.92) 100%),url('render-hero.png') center/cover no-repeat;
-background-color:var(--navy-d);}
-.hero-inner{max-width:1140px;margin:0 auto;padding:120px 32px 64px;width:100%;}
-.hero-tag{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--gold-border);background:rgba(184,146,74,.14);border-radius:2px;padding:7px 16px;margin-bottom:26px;}
-.hero-tag span{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold-l);letter-spacing:2.5px;text-transform:uppercase;}
-.hero-h1{font-size:52px;font-weight:900;line-height:1.32;letter-spacing:1px;margin-bottom:22px;text-shadow:0 2px 30px rgba(0,0,0,.4);}
-.hero-h1 .g{color:var(--gold-l);}
-.hero-lead{font-size:16px;color:rgba(255,255,255,.85);line-height:2;max-width:600px;margin-bottom:40px;}
-.hero-price{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:36px;}
-.hero-price .lbl{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:1px;padding-bottom:14px;}
-.hero-price .val{font-family:var(--en);font-size:72px;font-weight:700;line-height:.95;color:#fff;}
-.hero-price .val .u{font-family:var(--jp);font-size:26px;font-weight:500;margin-left:6px;}
-.hero-price .meta{font-size:13px;color:rgba(255,255,255,.7);padding-bottom:12px;line-height:1.7;}
-.hero-price .meta b{color:var(--gold-l);font-weight:600;}
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:3px;font-size:15px;font-weight:700;text-decoration:none;transition:all .2s;cursor:pointer;}
-.btn-gold{background:var(--gold);color:#fff;}
-.btn-gold:hover{background:var(--gold-l);transform:translateY(-2px);}
-.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.4);}
-.btn-ghost:hover{background:rgba(255,255,255,.16);}
-.scroll-stats{position:relative;margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.18);}
-.ss{padding:22px 14px 4px;}
-.ss .v{font-family:var(--en);font-size:38px;font-weight:700;color:#fff;line-height:1;}
-.ss .v .u{font-family:var(--jp);font-size:14px;font-weight:500;color:var(--gold-l);margin-left:3px;}
-.ss .l{font-size:12px;color:rgba(255,255,255,.6);margin-top:8px;}
+/* HERO (light, split) */
+.hero{background:var(--cream);padding-top:66px;border-bottom:1px solid var(--line);}
+.hero-grid{max-width:1160px;margin:0 auto;padding:64px 32px 0;display:grid;grid-template-columns:1fr 1.04fr;gap:54px;align-items:center;}
+.hero-tag{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:#fff;border-radius:2px;padding:7px 15px;margin-bottom:24px;}
+.hero-tag span{font-family:var(--es);font-size:10.5px;font-weight:700;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;}
+.hero-h1{font-size:46px;font-weight:900;line-height:1.34;letter-spacing:.5px;color:var(--ink);margin-bottom:20px;}
+.hero-h1 .g{color:var(--gold);}
+.hero-h1 .n{color:var(--navy);}
+.hero-lead{font-size:15.5px;color:var(--g6);line-height:2;margin-bottom:32px;max-width:520px;}
+.hero-price{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px;padding-bottom:28px;border-bottom:1px solid var(--line);}
+.hero-price .lbl{font-size:12px;color:var(--g5);letter-spacing:1px;padding-bottom:13px;}
+.hero-price .val{font-family:var(--en);font-size:66px;font-weight:700;line-height:.9;color:var(--navy);}
+.hero-price .val .u{font-family:var(--jp);font-size:23px;font-weight:600;margin-left:5px;}
+.hero-price .meta{font-size:12.5px;color:var(--g6);padding-bottom:10px;line-height:1.7;}
+.hero-price .meta b{color:var(--gold);font-weight:700;}
+.hero-btns{display:flex;gap:13px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 28px;border-radius:3px;font-size:15px;font-weight:700;text-decoration:none;transition:all .2s;cursor:pointer;}
+.btn-gold{background:var(--gold);color:#fff;}.btn-gold:hover{background:var(--gold-l);transform:translateY(-2px);}
+.btn-out{background:#fff;color:var(--navy);border:1.5px solid var(--navy);}.btn-out:hover{background:var(--navy);color:#fff;}
+.hero-img{position:relative;border-radius:10px;overflow:hidden;box-shadow:0 24px 60px -20px rgba(34,48,92,.35);border:1px solid var(--line);}
+.hero-img img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;}
+.hero-img .badge{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);backdrop-filter:blur(4px);border-radius:4px;padding:8px 14px;font-size:11.5px;color:var(--g6);font-weight:500;}
+.hero-img .badge b{color:var(--navy);}
+.scroll-stats{max-width:1160px;margin:56px auto 0;padding:0 32px;display:grid;grid-template-columns:repeat(4,1fr);}
+.ss{padding:0 14px 38px;border-right:1px solid var(--line);}
+.ss:last-child{border-right:none;}
+.ss .v{font-family:var(--en);font-size:42px;font-weight:700;color:var(--navy);line-height:1;}
+.ss .v .u{font-family:var(--jp);font-size:14px;font-weight:600;color:var(--gold);margin-left:3px;}
+.ss .l{font-size:12px;color:var(--g6);margin-top:8px;}
 
-/* SECTION base */
-.sec{padding:78px 0;}
-.sec.alt{background:var(--g1);}
-.sec.dark{background:var(--navy-d);color:#fff;}
+/* SECTION */
+.sec{padding:80px 0;}
+.sec.alt{background:var(--cream);}
+.sec.cream2{background:var(--cream2);}
 .sec-l{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;}
-.sec.dark .sec-l{color:var(--gold-l);}
-.sec-t{font-size:30px;font-weight:900;color:var(--black);line-height:1.4;margin-bottom:14px;}
-.sec.dark .sec-t{color:#fff;}
-.sec-d{font-size:15px;color:var(--g6);line-height:2;max-width:720px;margin-bottom:40px;}
-.sec.dark .sec-d{color:rgba(255,255,255,.72);}
+.sec-t{font-size:30px;font-weight:900;color:var(--ink);line-height:1.4;margin-bottom:14px;}
+.sec-t .n{color:var(--navy);}
+.sec-d{font-size:15px;color:var(--g6);line-height:2;max-width:720px;margin-bottom:42px;}
 
 /* HIGHLIGHTS */
 .hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.hl{background:var(--white);border:1px solid var(--g2);border-radius:6px;padding:30px 26px;transition:.25s;position:relative;overflow:hidden;}
+.hl{background:#fff;border:1px solid var(--line);border-radius:7px;padding:30px 26px;transition:.25s;position:relative;overflow:hidden;}
 .hl:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:.25s;}
-.hl:hover{box-shadow:0 14px 40px rgba(31,42,82,.1);transform:translateY(-3px);}
+.hl:hover{box-shadow:0 16px 44px -18px rgba(34,48,92,.28);transform:translateY(-3px);}
 .hl:hover:before{transform:scaleY(1);}
-.hl .n{font-family:var(--en);font-size:46px;font-weight:700;color:var(--navy);line-height:1;}
+.hl .n{font-family:var(--en);font-size:48px;font-weight:700;color:var(--navy);line-height:1;}
 .hl .n .u{font-family:var(--jp);font-size:16px;font-weight:600;color:var(--gold);margin-left:3px;}
-.hl .h{font-size:16px;font-weight:700;color:var(--black);margin:14px 0 8px;}
+.hl .h{font-size:16px;font-weight:700;color:var(--ink);margin:14px 0 8px;}
 .hl .p{font-size:13px;color:var(--g6);line-height:1.85;}
 
-/* VISION gallery */
-.vis-main{position:relative;border-radius:8px;overflow:hidden;margin-bottom:18px;border:1px solid rgba(255,255,255,.1);}
+/* VISION (light) */
+.vis-main{position:relative;border-radius:10px;overflow:hidden;margin-bottom:16px;border:1px solid var(--line);box-shadow:0 20px 50px -22px rgba(34,48,92,.3);}
 .vis-main img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;}
-.vis-cap{position:absolute;left:0;bottom:0;right:0;padding:26px 28px 20px;background:linear-gradient(0deg,rgba(10,14,28,.88),transparent);font-size:14px;}
-.vis-cap b{display:block;font-size:17px;font-weight:700;margin-bottom:3px;color:#fff;}
-.vis-cap span{color:rgba(255,255,255,.7);font-size:12.5px;}
+.vis-cap{position:absolute;left:0;bottom:0;right:0;padding:30px 30px 22px;background:linear-gradient(0deg,rgba(20,24,38,.82),transparent);color:#fff;}
+.vis-cap b{display:block;font-size:18px;font-weight:700;margin-bottom:3px;}
+.vis-cap span{color:rgba(255,255,255,.78);font-size:12.5px;}
 .vis-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
-.vis-row figure{border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:#0e1428;}
+.vis-row figure{border-radius:7px;overflow:hidden;border:1px solid var(--line);background:#fff;}
 .vis-row img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
-.vis-row figcaption{padding:11px 14px;font-size:12px;color:rgba(255,255,255,.72);line-height:1.5;}
-.vis-note{font-size:11.5px;color:rgba(255,255,255,.45);margin-top:18px;}
+.vis-row figcaption{padding:11px 14px;font-size:12px;color:var(--g6);line-height:1.5;border-top:1px solid var(--line);}
+.vis-note{font-size:11.5px;color:var(--g4);margin-top:18px;}
 
-/* SPEC TABLE */
-.spec{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border:1px solid var(--g2);border-radius:6px;overflow:hidden;}
-.spec th,.spec td{padding:15px 20px;border-bottom:1px solid var(--g2);text-align:left;vertical-align:top;}
+/* SPEC */
+.spec{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden;}
+.spec th,.spec td{padding:15px 20px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}
 .spec tr:last-child th,.spec tr:last-child td{border-bottom:none;}
-.spec th{font-weight:600;color:var(--g6);background:var(--g1);width:210px;white-space:nowrap;}
-.spec td{color:var(--black);font-weight:500;}
+.spec th{font-weight:600;color:var(--g6);background:var(--cream);width:210px;white-space:nowrap;}
+.spec td{color:var(--ink);font-weight:500;}
 .spec td strong{color:var(--navy);font-weight:700;}
 
-/* AUDIENCE cards */
+/* AUDIENCE */
 .aud{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:30px;}
-.aud .c{border:1px solid var(--g2);border-radius:6px;padding:26px 24px;background:#fff;}
+.aud .c{border:1px solid var(--line);border-radius:7px;padding:26px 24px;background:#fff;}
 .aud .k{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:12px;}
 .aud .t{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;}
 .aud .d{font-size:13px;color:var(--g6);line-height:1.95;}
-
-.engbox{border:1px solid var(--gold-border);border-radius:6px;padding:26px 28px;background:var(--gold-pale);}
+.engbox{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;padding:26px 28px;background:#fff;}
 .engbox .k{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:10px;}
 .engbox p{font-size:13.5px;color:var(--g7);line-height:1.95;}
 
 /* ACCESS */
 .access{display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;}
-.access div{font-size:14px;color:var(--g7);padding:13px 0;border-bottom:1px solid var(--g2);display:flex;justify-content:space-between;gap:12px;}
+.access div{font-size:14px;color:var(--g7);padding:13px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;}
 .access div span{color:var(--g5);}
-.access div strong{color:var(--black);font-weight:600;text-align:right;}
+.access div strong{color:var(--ink);font-weight:600;text-align:right;}
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;}
-.gal figure{border:1px solid var(--g2);border-radius:5px;overflow:hidden;background:#fff;}
+.gal figure{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff;}
 .gal img{width:100%;height:185px;object-fit:cover;display:block;}
-.gal figcaption{padding:9px 14px;font-size:12px;color:var(--g6);border-top:1px solid var(--g2);}
+.gal figcaption{padding:9px 14px;font-size:12px;color:var(--g6);border-top:1px solid var(--line);}
 .note{font-size:11.5px;color:var(--g4);margin-top:14px;}
 
 /* AGENT */
-.agent{background:#fff;border:1px solid var(--g2);border-radius:8px;overflow:hidden;max-width:780px;}
+.agent{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;max-width:800px;box-shadow:0 18px 50px -26px rgba(34,48,92,.25);}
 .agent-head{background:var(--navy);color:#fff;padding:28px 34px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
 .agent-head .w{font-family:var(--en);font-size:44px;font-weight:700;color:var(--gold-l);line-height:1;}
 .agent-head .co{font-size:21px;font-weight:700;letter-spacing:1px;}
-.agent-head .co small{display:block;font-family:var(--es);font-size:11px;font-weight:400;color:rgba(255,255,255,.6);letter-spacing:2px;margin-top:4px;}
+.agent-head .co small{display:block;font-family:var(--es);font-size:11px;font-weight:400;color:rgba(255,255,255,.62);letter-spacing:2px;margin-top:4px;}
 .agent-body{padding:30px 34px;}
 .agrid{width:100%;border-collapse:collapse;font-size:14px;}
-.agrid th,.agrid td{padding:12px 14px;border-bottom:1px solid var(--g2);text-align:left;}
+.agrid th,.agrid td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;}
 .agrid th{font-weight:600;color:var(--g6);width:150px;white-space:nowrap;}
-.agrid td{color:var(--black);font-weight:500;}
+.agrid td{color:var(--ink);font-weight:500;}
 .agrid td a{color:var(--navy);font-weight:600;text-decoration:none;}
 .agrid td a:hover{text-decoration:underline;}
 .agent-cta{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap;}
 .btn-navy{background:var(--navy);color:#fff;}.btn-navy:hover{background:var(--navy-d);}
-.btn-line{background:#fff;color:var(--navy);border:1.5px solid var(--navy);}.btn-line:hover{background:var(--gold-pale);}
 
-/* FOOTER */
-.footer{background:var(--navy-d);color:rgba(255,255,255,.7);padding:46px 32px;text-align:center;}
-.footer .co{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;}
-.footer .i{font-size:12.5px;line-height:2;}
-.footer .i a{color:var(--gold-l);text-decoration:none;}
-.footer .cp{font-size:11px;color:rgba(255,255,255,.4);margin-top:16px;}
-.disclaimer{max-width:1140px;margin:0 auto;padding:30px 32px 50px;font-size:11px;color:var(--g4);line-height:2;}
+/* FOOTER (light) */
+.footer{background:var(--cream2);color:var(--g6);padding:48px 32px;text-align:center;border-top:1px solid var(--line);}
+.footer .w{font-family:var(--en);font-size:30px;font-weight:700;color:var(--gold);line-height:1;}
+.footer .co{font-size:16px;font-weight:700;color:var(--navy);margin:8px 0;}
+.footer .i{font-size:12.5px;line-height:2;color:var(--g6);}
+.footer .i a{color:var(--navy);text-decoration:none;font-weight:600;}
+.footer .cp{font-size:11px;color:var(--g4);margin-top:16px;}
+.disclaimer{max-width:1160px;margin:0 auto;padding:30px 32px 52px;font-size:11px;color:var(--g4);line-height:2;}
 
-@media(max-width:860px){
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;gap:34px;padding-top:48px;}
+  .hero-img{order:-1;}
   .hl-grid,.aud{grid-template-columns:1fr;}
   .vis-row{grid-template-columns:1fr 1fr;}
 }
 @media(max-width:640px){
-  .wrap,.nav-inner,.hero-inner{padding-left:20px;padding-right:20px;}
-  .hero{min-height:auto;}
-  .hero-inner{padding:104px 20px 48px;}
-  .hero-h1{font-size:31px;line-height:1.4;}
+  .wrap,.nav-inner,.hero-grid,.scroll-stats{padding-left:20px;padding-right:20px;}
+  .hero-h1{font-size:30px;line-height:1.42;}
   .hero-price .val{font-size:50px;}
-  .scroll-stats{grid-template-columns:1fr 1fr;gap:0;}
-  .ss{padding:18px 10px 4px;}
+  .scroll-stats{grid-template-columns:1fr 1fr;}
+  .ss{padding-bottom:26px;}
+  .ss:nth-child(2){border-right:none;}
   .sec{padding:54px 0;}
   .sec-t{font-size:23px;}
-  .spec th{width:118px;padding:12px 13px;}
-  .spec td{padding:12px 13px;}
+  .spec th{width:116px;padding:12px 13px;}.spec td{padding:12px 13px;}
   .access{grid-template-columns:1fr;}
   .gal{grid-template-columns:1fr 1fr;}
-  .agent-body{padding:22px;}
-  .agrid th{width:104px;}
+  .agent-body{padding:22px;}.agrid th{width:104px;}
 }
 </style>
 </head>
@@ -185,25 +186,31 @@ background-color:var(--navy-d);}
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="hero-inner">
-    <div class="hero-tag"><span>Sapporo · Ainosato · Development Site</span></div>
-    <h1 class="hero-h1">駅前1分。容積率<span class="g">300%</span>。<br>札幌・あいの里の<span class="g">開発用地。</span></h1>
-    <p class="hero-lead">JR「あいの里教育大」駅 徒歩1分・ロータリー正面。所有権・更地・約579坪。介護／医療、商業、住宅、投資——構想を、そのまま形にできるまとまった土地です。</p>
-    <div class="hero-price">
-      <span class="lbl">販売価格</span>
-      <span class="val">11,000<span class="u">万円</span></span>
-      <span class="meta">（1億1,000万円）<br>坪単価 <b>約19.0万円/坪</b>／㎡単価 <b>約57,500円/㎡</b></span>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-tag"><span>Sapporo · Minami-Ainosato · Development Site</span></div>
+      <h1 class="hero-h1">駅前1分。容積率<span class="g">300%</span>。<br>札幌・あいの里の<span class="n">開発用地。</span></h1>
+      <p class="hero-lead">JR「あいの里教育大」駅 徒歩1分・ロータリー正面。所有権・更地・約579坪。介護／医療、商業、住宅、投資——構想を、そのまま形にできるまとまった土地です。</p>
+      <div class="hero-price">
+        <span class="lbl">販売価格</span>
+        <span class="val">11,000<span class="u">万円</span></span>
+        <span class="meta">（1億1,000万円）<br>坪単価 <b>約19.0万円/坪</b>／㎡単価 <b>約57,500円/㎡</b></span>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-gold">この土地について問い合わせる</a>
+        <a href="#vision" class="btn btn-out">完成予想を見る</a>
+      </div>
     </div>
-    <div class="hero-btns">
-      <a href="#contact" class="btn btn-gold">この土地について問い合わせる</a>
-      <a href="#vision" class="btn btn-ghost">完成予想を見る</a>
+    <div class="hero-img">
+      <img src="render-hero.png" alt="駅前複合施設 完成予想パース（夕景）">
+      <div class="badge"><b>完成予想イメージ</b>　駅前ロータリー正面に建つ中層複合施設（パース）</div>
     </div>
-    <div class="scroll-stats">
-      <div class="ss"><div class="v">1<span class="u">分</span></div><div class="l">JR駅まで徒歩</div></div>
-      <div class="ss"><div class="v">300<span class="u">%</span></div><div class="l">容積率</div></div>
-      <div class="ss"><div class="v">579<span class="u">坪</span></div><div class="l">敷地面積</div></div>
-      <div class="ss"><div class="v">25<span class="u">分</span></div><div class="l">札幌駅へ（JR）</div></div>
-    </div>
+  </div>
+  <div class="scroll-stats">
+    <div class="ss"><div class="v">1<span class="u">分</span></div><div class="l">JR駅まで徒歩</div></div>
+    <div class="ss"><div class="v">300<span class="u">%</span></div><div class="l">容積率</div></div>
+    <div class="ss"><div class="v">579<span class="u">坪</span></div><div class="l">敷地面積</div></div>
+    <div class="ss"><div class="v">25<span class="u">分</span></div><div class="l">札幌駅へ（JR）</div></div>
   </div>
 </header>
 
@@ -211,7 +218,7 @@ background-color:var(--navy-d);}
 <section class="sec">
   <div class="wrap">
     <div class="sec-l">Why This Land</div>
-    <div class="sec-t">この立地が選ばれる、6つの理由</div>
+    <div class="sec-t">この立地が選ばれる、<span class="n">6つの理由</span></div>
     <div class="sec-d">数字で見ても、構想で見ても、手を挙げる価値のある駅前用地です。</div>
     <div class="hl-grid">
       <div class="hl"><div class="n">1<span class="u">分</span></div><div class="h">改札からフラットに1分</div><div class="p">JR学園都市線「あいの里教育大」駅、ロータリー正面。通勤・通院・集客いずれにも効く駅前接地です。</div></div>
@@ -225,15 +232,14 @@ background-color:var(--navy-d);}
 </section>
 
 <!-- VISION -->
-<section class="sec dark" id="vision">
+<section class="sec alt" id="vision">
   <div class="wrap">
     <div class="sec-l">Vision &mdash; 完成予想</div>
-    <div class="sec-t">この土地に、未来を描く。</div>
+    <div class="sec-t">この土地に、<span class="n">未来を描く。</span></div>
     <div class="sec-d">容積率300%・約579坪のポテンシャルを可視化した完成予想イメージです。実際の建築計画は買主様の事業構想に応じて自由に設計いただけます。</div>
-
     <div class="vis-main">
-      <img src="render-hero.png" alt="建物完成予想 夜景パース">
-      <div class="vis-cap"><b>駅前ランドマークの夜景予想</b><span>ロータリー正面に建つ中層複合施設のイメージ（完成予想）</span></div>
+      <img src="render-hero.png" alt="駅前複合施設 完成予想パース">
+      <div class="vis-cap"><b>駅前ランドマークの夕景予想</b><span>ロータリー正面に建つ中層複合施設のイメージ（完成予想）</span></div>
     </div>
     <div class="vis-row">
       <figure><img src="render-building.png" alt="建物外観 昼景"><figcaption>建物外観（昼景）</figcaption></figure>
@@ -246,12 +252,12 @@ background-color:var(--navy-d);}
 </section>
 
 <!-- 物件概要 -->
-<section class="sec alt" id="overview">
+<section class="sec" id="overview">
   <div class="wrap">
     <div class="sec-l">Property Overview</div>
     <div class="sec-t">物件概要</div>
     <table class="spec">
-      <tr><th>所在地</th><td>北海道札幌市北区（あいの里エリア）<br><span style="font-size:12px;color:var(--g5);">※地番等の詳細はお問い合わせください</span></td></tr>
+      <tr><th>所在地</th><td>北海道札幌市北区南あいの里6丁目<br><span style="font-size:12px;color:var(--g5);">※地番等の詳細はお問い合わせください</span></td></tr>
       <tr><th>交通</th><td>JR学園都市線「あいの里教育大」駅 <strong>徒歩1分</strong>（駅前ロータリー正面）</td></tr>
       <tr><th>販売価格</th><td><strong>11,000万円</strong>（1億1,000万円）</td></tr>
       <tr><th>坪 / ㎡単価</th><td>約19.0万円/坪 ／ 約57,500円/㎡</td></tr>
@@ -269,7 +275,7 @@ background-color:var(--navy-d);}
 </section>
 
 <!-- 活用・開発 -->
-<section class="sec" id="potential">
+<section class="sec cream2" id="potential">
   <div class="wrap">
     <div class="sec-l">Development &amp; Investment</div>
     <div class="sec-t">活用・開発の可能性</div>
@@ -280,7 +286,7 @@ background-color:var(--navy-d);}
       <div class="c"><div class="k">INVESTORS &amp; FUNDS</div><div class="t">国内外の投資ファンドの皆さまへ</div><div class="d">札幌都心へJRで約25〜30分の駅前用地。所有権・更地のため取得後の開発・組成の自由度が高い案件です。ヘルスケア／レジデンシャル開発を検討される投資家のご相談に対応します。</div></div>
     </div>
     <table class="spec" style="margin-bottom:22px;">
-      <tr><th>計画可能規模（最大）</th><td>容積フル活用時 延床 <strong>約1,360〜1,720坪（約4,500〜5,700㎡）</strong></td></tr>
+      <tr><th>計画可能規模（最大）</th><td>容積フル活用時 延床 <strong>約1,360〜1,720坪（約4,500〜5,700㎡）</strong>／中層（目安4〜6階）で計画可能</td></tr>
       <tr><th>想定用途</th><td>介護・医療施設／商業施設／共同住宅／複合用途 ほか（用途地域の制限に準ずる）</td></tr>
       <tr><th>取得後の事業形態</th><td>自社開発・運営／賃貸／開発分譲／ファンド組成 等（買主様にて選択）</td></tr>
     </table>
@@ -293,7 +299,7 @@ background-color:var(--navy-d);}
 </section>
 
 <!-- アクセス -->
-<section class="sec alt" id="area">
+<section class="sec" id="area">
   <div class="wrap">
     <div class="sec-l">Access &amp; Area</div>
     <div class="sec-t">アクセス・周辺環境</div>
@@ -318,7 +324,7 @@ background-color:var(--navy-d);}
 </section>
 
 <!-- お問い合わせ -->
-<section class="sec" id="contact">
+<section class="sec alt" id="contact">
   <div class="wrap">
     <div class="sec-l">Contact</div>
     <div class="sec-t">お問い合わせ</div>
@@ -338,7 +344,7 @@ background-color:var(--navy-d);}
         </table>
         <div class="agent-cta">
           <a class="btn btn-navy" href="mailto:info@tamjump.com?subject=【あいの里教育大駅前 開発用地】お問い合わせ">メールで問い合わせる</a>
-          <a class="btn btn-line" href="tel:01122121601">電話で問い合わせる</a>
+          <a class="btn btn-out" href="tel:01122121601">電話で問い合わせる</a>
         </div>
       </div>
     </div>
@@ -347,6 +353,7 @@ background-color:var(--navy-d);}
 
 <!-- FOOTER -->
 <footer class="footer">
+  <div class="w">W</div>
   <div class="co">株式会社ウェルト</div>
   <div class="i">
     〒060-0061 北海道札幌市中央区南1条西11丁目1 みたか南一ビル<br>
