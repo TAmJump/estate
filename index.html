@@ -117,6 +117,27 @@ a{color:inherit;}
 .engbox .k{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:10px;}
 .engbox p{font-size:13.5px;color:var(--g7);line-height:1.95;}
 
+/* INVESTOR: comparison table + market cards */
+.cmp{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden;}
+.cmp th,.cmp td{padding:12px 14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;}
+.cmp tr:last-child th,.cmp tr:last-child td{border-bottom:none;}
+.cmp th:last-child,.cmp td:last-child{border-right:none;}
+.cmp thead th{background:var(--navy);color:#fff;font-weight:700;text-align:center;font-size:13px;}
+.cmp thead th small{display:block;font-family:var(--es);font-size:10px;font-weight:500;color:var(--gold-l);letter-spacing:1px;margin-top:2px;}
+.cmp tbody th{background:var(--cream);color:var(--g6);font-weight:600;width:150px;white-space:nowrap;}
+.cmp tbody td{color:var(--ink);font-weight:500;}
+.cmp .hi{background:#FBF6EC;}
+.cmp .hi td,.cmp tbody td.hi{box-shadow:inset 0 0 0 9999px rgba(176,136,62,.06);}
+.cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.mkt{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.mkt .c{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:7px;padding:24px 22px;background:#fff;}
+.mkt .lab{font-size:12px;color:var(--g6);margin-bottom:8px;line-height:1.5;}
+.mkt .big{font-family:var(--en);font-size:34px;font-weight:700;color:var(--navy);line-height:1;}
+.mkt .big .u{font-family:var(--jp);font-size:14px;font-weight:600;color:var(--gold);margin-left:3px;}
+.mkt .sub{font-size:12px;color:var(--g6);margin-top:10px;line-height:1.7;}
+.mkt .src{font-size:10.5px;color:var(--g4);margin-top:8px;}
+@media(max-width:860px){.mkt{grid-template-columns:1fr;}}
+
 /* ACCESS */
 .map-feature{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin-bottom:34px;box-shadow:0 18px 50px -26px rgba(34,48,92,.28);}
 .map-feature img{width:100%;display:block;}
@@ -305,6 +326,68 @@ a{color:inherit;}
       <p>Development land for sale in Sapporo, Hokkaido, Japan. One-minute walk from JR &ldquo;Ainosato-Kyoikudai&rdquo; Station (approx. 25&ndash;30 min to Sapporo Station). Site area approx. 1,913.31&nbsp;m&sup2; (approx. 579&nbsp;tsubo), neighborhood-commercial zoning, FAR 300% / building coverage 80%, freehold, vacant lot. Asking price <strong>JPY 110,000,000</strong>. Suitable for care/medical facilities, residential or commercial development, or fund-led projects. Please contact us below for details.</p>
     </div>
     <p class="note">※ 規模・用途・収益等の記載は計画上の目安であり、実現性・採算を保証するものではありません。投資判断はお客様ご自身の責任で行ってください。本ページは投資勧誘を目的とするものではありません。</p>
+  </div>
+</section>
+
+<!-- 開発スケール・データ（投資家向け） -->
+<section class="sec alt" id="data">
+  <div class="wrap">
+    <div class="sec-l">Development Scale &amp; Market Data</div>
+    <div class="sec-t">開発スケール・<span class="n">市況データ</span></div>
+    <div class="sec-d">容積率300%・約579坪のポテンシャルを、規模レンジと市況データで整理しました。事業者・投資家の検討材料としてご活用ください。</div>
+
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:0 0 14px;">計画規模レンジ（最小〜標準〜最大）</h3>
+    <div class="cmp-wrap">
+    <table class="cmp">
+      <thead><tr><th style="background:var(--cream);"></th><th>MINIMUM<small>最小規模</small></th><th class="hi">STANDARD<small>標準（基本設計準拠）</small></th><th>MAXIMUM<small>容積フル活用</small></th></tr></thead>
+      <tbody>
+        <tr><th>想定居室数 / 床数</th><td>30〜40床</td><td class="hi">64床（基本設計済み）</td><td>100〜120床</td></tr>
+        <tr><th>延床面積（想定）</th><td>約600〜900㎡<br>（約180〜270坪）</td><td class="hi">約2,840㎡<br>（約859坪）</td><td>約4,500〜5,700㎡<br>（約1,360〜1,720坪）</td></tr>
+        <tr><th>容積消化率</th><td>〜15%</td><td class="hi">約50%</td><td>〜100%</td></tr>
+        <tr><th>想定構造・規模</th><td>木造 / RC 2階</td><td class="hi">RC壁式 2階</td><td>RC造 3〜5階</td></tr>
+        <tr><th>主な想定運営形態</th><td>小規模多機能・<br>グループホーム型</td><td class="hi">住宅型有料老人ホーム<br>（ホスピス型 等）</td><td>住宅型＋ホスピス混合・<br>特定施設入居者生活介護 等</td></tr>
+        <tr><th>建築費の目安<br><span style="font-weight:400;font-size:11px;">（参考概算）</span></th><td>約2〜4億円</td><td class="hi">約9〜12億円</td><td>約14〜24億円</td></tr>
+        <tr><th>駐車台数（想定）</th><td>10〜15台</td><td class="hi">30〜40台</td><td>40〜60台</td></tr>
+        <tr><th>将来拡張余地</th><td>大（残容積 多）</td><td class="hi">中（残容積 約50%）</td><td>小（容積ほぼ消化）</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">※ 「STANDARD（64床・RC2階）」は一級建築士事務所による基本設計に基づく実在の計画です。本ページの完成予想パースは、容積をより活用した「MAXIMUM（中層）」の将来イメージを表現しています。規模・用途は買主様の事業計画に応じて設計変更が可能です。建築費は北海道のRC造実勢坪単価（後述）に想定延床を乗じた参考概算で、設備・防火仕様等は別途、正式見積は設計・施工会社の確定によります。</p>
+
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:36px 0 14px;">開発条件</h3>
+    <table class="spec">
+      <tr><th>用途地域</th><td>近隣商業地域</td></tr>
+      <tr><th>建蔽率 / 容積率</th><td>建蔽率 80%（最大建築面積 約1,530㎡）／ 容積率 300%（最大延床 約5,740㎡・約1,736坪）</td></tr>
+      <tr><th>高度地区 / 防火</th><td>45m高度地区 ／ 準防火地域</td></tr>
+      <tr><th>その他地域指定</th><td>景観計画区域 ／ 緑保全創出地域 ／ 日影規制 除外区域</td></tr>
+      <tr><th>前面道路</th><td>南あいの里区画整理17号線（幅員 約14m）</td></tr>
+      <tr><th>計画可能用途</th><td>有料老人ホーム（住宅型・ホスピス型 等）ほか／用途・形態は協議</td></tr>
+      <tr><th>基本設計</th><td>一級建築士事務所による基本設計あり（64床・RC2階）※詳細はお問い合わせ</td></tr>
+      <tr><th>権利 / 現況</th><td>所有権 ／ 更地（未着工・更地渡し想定）</td></tr>
+    </table>
+
+    <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:36px 0 14px;">マーケットデータ（参考）</h3>
+    <div class="mkt">
+      <div class="c">
+        <div class="lab">あいの里教育大駅エリア 公示地価（2025年）</div>
+        <div class="big">56,250<span class="u">円/㎡</span></div>
+        <div class="sub">坪単価 約18.6万円/坪。前年比 <strong style="color:var(--gold);">+1.82%</strong>（上昇）。<br>※住宅地平均。近隣商業地は補正を要します。</div>
+        <div class="src">出典：国土交通省 公示地価</div>
+      </div>
+      <div class="c">
+        <div class="lab">北海道 RC造 建築費（2025年 実勢）</div>
+        <div class="big">100〜142<span class="u">万円/坪</span></div>
+        <div class="sub">分譲RC（北海道）は約142万円/坪。有料老人ホームは設備・防火仕様で標準比 +5〜15% 程度の加算。</div>
+        <div class="src">出典：国土交通省 建築着工統計 ほか</div>
+      </div>
+      <div class="c">
+        <div class="lab">建設費の上昇トレンド（2012→2025）</div>
+        <div class="big">+119<span class="u">%</span></div>
+        <div class="sub">RC造の建築費は約2倍超に。総事業費に占める建築費の比重が高まっており、立地のよい用地の相対的価値が意識されています。</div>
+        <div class="src">出典：建設物価・着工統計に基づく概算</div>
+      </div>
+    </div>
+    <p class="note">※ 掲載の地価・建築費・規模・費用等は、公的データおよび計画上の想定に基づく参考情報であり、正式な不動産鑑定評価・確定見積ではありません。将来の価格・収益・採算を保証するものではなく、投資勧誘を目的とするものでもありません。投資判断はお客様ご自身の責任で行ってください。最新の数値・詳細条件は取扱不動産会社へご確認ください。</p>
   </div>
 </section>
 
