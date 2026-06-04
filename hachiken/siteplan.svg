@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" font-family="'Noto Sans JP',sans-serif">
+  <defs>
+    <linearGradient id="bgS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBF8F2"/><stop offset="1" stop-color="#F2ECDF"/></linearGradient>
+    <pattern id="park" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="13" height="13" fill="#EFE7D4"/><rect x="0" y="0" width="13" height="2" fill="#D8CDB2"/></pattern>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#22305C"/></marker>
+  </defs>
+  <rect width="1080" height="620" fill="url(#bgS)"/>
+
+  <!-- 方位 -->
+  <g transform="translate(1018,52)"><circle r="20" fill="#fff" stroke="#E9E3D6"/><path d="M0,-13 L5,5 L0,1 L-5,5 Z" fill="#22305C"/><text x="0" y="-24" text-anchor="middle" font-size="11" fill="#6A6E76" font-weight="700">N</text></g>
+
+  <!-- 環状通（道道下手稲札幌線・760-113） -->
+  <polygon points="120,110 190,120 360,560 270,560" fill="#E4DCC9"/>
+  <text x="225" y="350" transform="rotate(70 225 350)" text-anchor="middle" font-size="13" fill="#8C7A4E" font-weight="700">環状通（道道下手稲札幌線）</text>
+
+  <!-- 周辺（淡色） -->
+  <polygon points="640,330 760,330 770,470 650,500" fill="#F3EEE3" stroke="#E1D8C5"/>
+  <polygon points="430,120 620,120 600,250 470,250" fill="#F3EEE3" stroke="#E1D8C5"/>
+
+  <!-- 760-134（主たる建築敷地） -->
+  <polygon points="300,150 470,160 470,250 480,310 320,320 200,250" fill="rgba(176,136,62,0.10)" stroke="#B0883E" stroke-width="2.5"/>
+  <text x="250" y="180" font-size="12.5" fill="#8C7A4E" font-weight="700">760-134（畑 991㎡）</text>
+  <!-- 建物 -->
+  <polygon points="300,196 452,205 458,266 318,278 226,236" fill="#22305C" stroke="#19244A" stroke-width="2"/>
+  <text x="340" y="232" text-anchor="middle" font-size="15" fill="#fff" font-weight="800">建物（中層複合）</text>
+  <text x="340" y="252" text-anchor="middle" font-size="11" fill="#C49A4E">RC 4〜5階・延床〜約3,300㎡</text>
+
+  <!-- 760-133（駐車・アプローチ） -->
+  <polygon points="200,250 320,320 480,310 500,470 330,520 175,360" fill="url(#park)" stroke="#B0883E" stroke-width="2.5"/>
+  <text x="345" y="392" text-anchor="middle" font-size="13" fill="#43474E" font-weight="700">駐車場・アプローチ</text>
+  <text x="345" y="411" text-anchor="middle" font-size="11.5" fill="#8C7A4E">760-133（宅地 488㎡／現況：古家）</text>
+  <!-- 駐車マス（簡易） -->
+  <g fill="#fff" stroke="#CDBF9E" stroke-width="1">
+    <rect x="250" y="430" width="22" height="13"/><rect x="276" y="432" width="22" height="13"/><rect x="302" y="434" width="22" height="13"/><rect x="328" y="436" width="22" height="13"/>
+    <rect x="250" y="455" width="22" height="13"/><rect x="276" y="457" width="22" height="13"/><rect x="302" y="459" width="22" height="13"/><rect x="328" y="461" width="22" height="13"/>
+  </g>
+
+  <!-- 760-137（緑地・付帯駐車） -->
+  <polygon points="480,310 560,308 568,388 500,470" fill="rgba(60,122,80,0.12)" stroke="#3C7A50" stroke-width="2"/>
+  <text x="600" y="356" font-size="12" fill="#3C7A50" font-weight="700">760-137（畑 170㎡）</text>
+  <text x="600" y="373" font-size="11" fill="#6A6E76">緑地・付帯駐車 ほか</text>
+  <line x1="560" y1="350" x2="596" y2="352" stroke="#3C7A50" stroke-width="1"/>
+
+  <!-- 760-108（公衆用道路＝副進入） -->
+  <polygon points="490,260 560,210 600,200 640,210 600,300 480,310" fill="rgba(108,110,118,0.16)" stroke="#6A6E76" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="690" y="236" font-size="12" fill="#43474E" font-weight="700">760-108（公衆用道路）</text>
+  <text x="690" y="253" font-size="11" fill="#6A6E76">副進入・サービス動線</text>
+  <line x1="612" y1="245" x2="684" y2="242" stroke="#6A6E76" stroke-width="1"/>
+
+  <!-- 進入（環状通からメイン） -->
+  <line x1="250" y1="495" x2="300" y2="455" stroke="#22305C" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="210" y="512" font-size="11.5" fill="#22305C" font-weight="700">主進入（環状通から）</text>
+
+  <!-- 凡例 -->
+  <g transform="translate(720,400)">
+    <rect x="0" y="0" width="330" height="170" rx="9" fill="#fff" stroke="#E9E3D6"/>
+    <text x="20" y="30" font-size="13" fill="#22305C" font-weight="800">配置の考え方（中層複合プラン例）</text>
+    <line x1="20" y1="42" x2="310" y2="42" stroke="#EFEAE0"/>
+    <g transform="translate(20,60)"><rect x="0" y="-9" width="20" height="13" fill="#22305C"/><text x="30" y="2" font-size="11.5" fill="#43474E">建物：760-134（最大敷地）に配置</text></g>
+    <g transform="translate(20,86)"><rect x="0" y="-9" width="20" height="13" fill="url(#park)" stroke="#CDBF9E"/><text x="30" y="2" font-size="11.5" fill="#43474E">駐車・進入：760-133（環状通側）</text></g>
+    <g transform="translate(20,112)"><rect x="0" y="-9" width="20" height="13" fill="rgba(60,122,80,0.2)" stroke="#3C7A50"/><text x="30" y="2" font-size="11.5" fill="#43474E">緑地・付帯：760-137</text></g>
+    <g transform="translate(20,138)"><rect x="0" y="-9" width="20" height="13" fill="rgba(108,110,118,0.2)" stroke="#6A6E76" stroke-dasharray="4 3"/><text x="30" y="2" font-size="11.5" fill="#43474E">副進入：760-108（公衆用道路）</text></g>
+  </g>
+
+  <text x="24" y="600" font-size="11" fill="#AEB1B7">※ 建物・駐車の配置は計画上の一例（イメージ）です。実際の形状・寸法・接道・配置は、測量・行政協議・設計により決まります。ロードサイド商業プランでは、環状通に平行な低層店舗＋前面駐車（760-133・134）とする配置も可能です。</text>
+</svg>
