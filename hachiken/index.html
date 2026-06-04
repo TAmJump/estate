@@ -165,6 +165,12 @@ a{color:inherit;}
 .map-feature{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin-bottom:34px;box-shadow:0 18px 50px -26px rgba(34,48,92,.28);}
 .map-feature img{width:100%;display:block;}
 .map-feature .cap{padding:12px 18px;font-size:12px;color:var(--g6);border-top:1px solid var(--line);}
+.map-embed{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin-bottom:16px;box-shadow:0 18px 50px -26px rgba(34,48,92,.28);}
+.map-embed iframe{width:100%;height:400px;border:0;display:block;background:#eee;}
+.map-embed .cap{padding:12px 18px;font-size:12.5px;color:var(--g6);border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;}
+.map-embed .cap a{color:var(--navy);font-weight:700;text-decoration:none;white-space:nowrap;}
+.map-embed .cap a:hover{text-decoration:underline;}
+@media(max-width:640px){.map-embed iframe{height:300px;}}
 .access{display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;}
 .access div{font-size:14px;color:var(--g7);padding:13px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;}
 .access div span{color:var(--g5);}
@@ -292,7 +298,7 @@ a{color:inherit;}
     <div class="sec-d">容積率200%・有効宅地 約499坪（4筆合算 約535坪）のポテンシャルを可視化した完成予想イメージです。中層に積む〈中層複合プラン〉と、幹線の集客を活かす〈ロードサイド商業プラン〉の2案をご覧いただけます。実際の計画は買主様の構想に応じて自由に設計いただけます。</div>
     <div class="map-feature" style="margin-bottom:34px;">
       <img src="siteplan.svg" alt="建物配置イメージ（4筆のどこに建物・駐車・進入を置くか）">
-      <div class="cap">建物配置イメージ ― 760-134を主たる建築敷地とし、環状通側（760-133）にアプローチ・駐車を配置した一例（中層複合プラン）</div>
+      <div class="cap">建物配置イメージ（土地を上から見た図）― 大通り（環状通）側に入口・駐車場、いちばん大きい敷地（760-134）に建物を配置した一例</div>
     </div>
 
     <h3 style="font-size:16px;font-weight:700;color:var(--navy);margin:0 0 14px;">中層複合プラン<span style="font-weight:400;font-size:13px;color:var(--g5);">　― 住宅・医療・福祉を積層（RC 4〜5階・延床 約3,300㎡まで）</span></h3>
@@ -494,9 +500,17 @@ a{color:inherit;}
   <div class="wrap">
     <div class="sec-l">Access &amp; Area</div>
     <div class="sec-t">アクセス・周辺環境</div>
+    <div class="map-embed">
+      <iframe loading="lazy" title="札幌市内での位置" src="https://www.openstreetmap.org/export/embed.html?bbox=141.255%2C43.020%2C141.430%2C43.135&layer=mapnik&marker=43.08255%2C141.32355"></iframe>
+      <div class="cap"><span>① 札幌市内での位置（地図）</span><a href="https://www.google.com/maps/search/?api=1&amp;query=43.08255,141.32355" target="_blank" rel="noopener">Googleマップで開く ↗</a></div>
+    </div>
+    <div class="map-embed">
+      <iframe loading="lazy" title="周辺地図（近接）" src="https://www.openstreetmap.org/export/embed.html?bbox=141.3140%2C43.0790%2C141.3330%2C43.0875&layer=mapnik&marker=43.08255%2C141.32355"></iframe>
+      <div class="cap"><span>② 周辺地図（八軒6条東5丁目／環状通沿い）</span><a href="https://www.google.com/maps/dir/?api=1&amp;destination=43.08255,141.32355" target="_blank" rel="noopener">ルート・拡大（Googleマップ）↗</a></div>
+    </div>
     <div class="map-feature">
       <img src="koten-real.png" alt="公図（法務局 写し）― ピンク枠が本物件の4筆">
-      <div class="cap">公図（法務局 写し）― ピンク枠が本物件の4筆（760-134・133・137・108）／前面 760-113＝環状通（道道下手稲札幌線）</div>
+      <div class="cap">③ 公図（法務局 写し・参考）― ピンク枠が本物件の4筆（760-134・133・137・108）／前面 760-113＝環状通</div>
     </div>
     <table class="spec" style="margin-bottom:34px;">
       <tr><th>760-134</th><td>畑　991㎡（約300坪）</td></tr>
@@ -505,14 +519,6 @@ a{color:inherit;}
       <tr><th>760-108</th><td>公衆用道路　120㎡（約36坪）</td></tr>
       <tr><th>合計</th><td><strong>4筆合算 約1,769㎡（約535坪）</strong>／うち建築可能な有効宅地 約1,649㎡（約499坪）</td></tr>
     </table>
-    <div class="map-feature">
-      <img src="map-city.png" alt="札幌市内での位置（地図）">
-      <div class="cap">札幌市内での位置（地図）</div>
-    </div>
-    <div class="map-feature">
-      <img src="map-area.png" alt="周辺地図（近接）">
-      <div class="cap">周辺地図（近接）</div>
-    </div>
     <div class="access">
       <div><span>最寄り駅</span><strong>JR「八軒」駅 徒歩約8分</strong></div>
       <div><span>前面バス停</span><strong>環状通「八軒6条東5丁目」至近</strong></div>
