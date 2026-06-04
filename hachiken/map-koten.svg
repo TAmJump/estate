@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 600" font-family="'Noto Sans JP',sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBF8F2"/><stop offset="1" stop-color="#F2ECDF"/></linearGradient>
+  </defs>
+  <rect width="1080" height="600" fill="url(#bg3)"/>
+
+  <!-- 方位 -->
+  <g transform="translate(1018,52)"><circle r="20" fill="#fff" stroke="#E9E3D6"/><path d="M0,-13 L5,5 L0,1 L-5,5 Z" fill="#22305C"/><text x="0" y="-24" text-anchor="middle" font-size="11" fill="#6A6E76" font-weight="700">N</text></g>
+
+  <!-- 環状通（道道下手稲札幌線・760-113）左側を斜行 -->
+  <polygon points="120,110 190,120 360,560 270,560" fill="#E4DCC9"/>
+  <text x="225" y="350" transform="rotate(70 225 350)" text-anchor="middle" font-size="13" fill="#8C7A4E" font-weight="700">環状通（道道下手稲札幌線・760-113）</text>
+
+  <!-- 周辺（参考・淡色） -->
+  <polygon points="190,120 120,110 70,210 175,300" fill="#F1ECE0" stroke="#E1D8C5"/><text x="120" y="220" text-anchor="middle" font-size="10.5" fill="#A99F86">760-117</text>
+  <polygon points="640,330 760,330 770,470 650,500" fill="#F1ECE0" stroke="#E1D8C5"/><text x="700" y="415" text-anchor="middle" font-size="10.5" fill="#A99F86">760-132</text>
+  <polygon points="360,560 520,520 640,540 600,600 360,600" fill="#EFEAE0" stroke="#E1D8C5"/><text x="510" y="575" text-anchor="middle" font-size="10.5" fill="#A99F86">760-77（公園）</text>
+  <polygon points="430,120 620,120 600,250 470,250" fill="#F1ECE0" stroke="#E1D8C5"/><text x="525" y="190" text-anchor="middle" font-size="10.5" fill="#A99F86">760-101 / 102</text>
+
+  <!-- 本物件 4筆 -->
+  <!-- 760-134 (991㎡) -->
+  <polygon points="300,150 470,160 470,250 470,250 480,310 320,320 200,250" fill="rgba(176,136,62,0.20)" stroke="#B0883E" stroke-width="3"/>
+  <text x="345" y="232" text-anchor="middle" font-size="15" fill="#22305C" font-weight="800">760-134</text>
+  <text x="345" y="252" text-anchor="middle" font-size="11.5" fill="#43474E">畑 991㎡（約300坪）</text>
+
+  <!-- 760-133 (488㎡) -->
+  <polygon points="200,250 320,320 480,310 500,470 330,520 175,360" fill="rgba(176,136,62,0.20)" stroke="#B0883E" stroke-width="3"/>
+  <text x="330" y="400" text-anchor="middle" font-size="15" fill="#22305C" font-weight="800">760-133</text>
+  <text x="330" y="420" text-anchor="middle" font-size="11.5" fill="#43474E">宅地 488㎡（約148坪）</text>
+  <text x="330" y="440" text-anchor="middle" font-size="10.5" fill="#8C7A4E">居宅あり（古家）</text>
+
+  <!-- 760-137 (170㎡) -->
+  <polygon points="480,310 560,308 568,388 500,470" fill="rgba(176,136,62,0.20)" stroke="#B0883E" stroke-width="3"/>
+  <text x="612" y="356" font-size="13" fill="#22305C" font-weight="800">760-137</text>
+  <text x="612" y="374" font-size="11" fill="#43474E">畑 170㎡（約51坪）</text>
+  <line x1="560" y1="350" x2="606" y2="352" stroke="#B0883E" stroke-width="1"/>
+
+  <!-- 760-108 公衆用道路 (120㎡) -->
+  <polygon points="490,260 560,210 600,200 640,210 600,300 480,310" fill="rgba(108,110,118,0.18)" stroke="#6A6E76" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <text x="690" y="232" font-size="13" fill="#43474E" font-weight="800">760-108</text>
+  <text x="690" y="250" font-size="11" fill="#43474E">公衆用道路 120㎡（約36坪）</text>
+  <line x1="610" y1="245" x2="684" y2="240" stroke="#6A6E76" stroke-width="1"/>
+
+  <!-- 合計ボックス -->
+  <g transform="translate(700,400)">
+    <rect x="0" y="0" width="350" height="158" rx="9" fill="#fff" stroke="#E9E3D6"/>
+    <text x="20" y="30" font-size="13" fill="#22305C" font-weight="800">地番内訳（登記地積）</text>
+    <line x1="20" y1="42" x2="330" y2="42" stroke="#EFEAE0"/>
+    <text x="20" y="64" font-size="12" fill="#43474E">760-134 畑　　　991㎡（約300坪）</text>
+    <text x="20" y="86" font-size="12" fill="#43474E">760-133 宅地　　488㎡（約148坪）</text>
+    <text x="20" y="108" font-size="12" fill="#43474E">760-137 畑　　　170㎡（約51坪）</text>
+    <text x="20" y="130" font-size="12" fill="#6A6E76">760-108 公衆用道路 120㎡（約36坪）</text>
+    <line x1="20" y1="140" x2="330" y2="140" stroke="#EFEAE0"/>
+    <text x="20" y="152" font-size="12" fill="#22305C" font-weight="700">4筆合算 1,769㎡ 約535坪／有効宅地3筆 約499坪</text>
+  </g>
+
+  <text x="24" y="586" font-size="11" fill="#AEB1B7">※ 4筆の配置を示すイメージ図です。正確な形状・寸法・方位は法務局の公図・地積測量図によります。760-108は公衆用道路（建築可能な有効宅地は3筆＝約499坪）。</text>
+</svg>
