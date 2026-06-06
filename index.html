@@ -3,188 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>株式会社ウェルト｜札幌の開発用地 SELECTED DEVELOPMENT LAND, SAPPORO</title>
-<meta name="description" content="株式会社ウェルトが取り扱う、札幌のまとまった開発用地。あいの里教育大駅前（札幌市北区・約579坪・容積300%）／八軒6条東5丁目（札幌市西区・約535坪・容積200%・環状通沿い）。医療・福祉、商業、住宅、投資用地に。">
+<title>SAPPORO｜開発用地 SELECT DEVELOPMENT LAND, SAPPORO, JAPAN</title>
+<meta name="description" content="札幌の選ばれた開発用地。あいの里教育大駅前（北区・約579坪・容積300%）／八軒6条東5丁目（西区・約535坪・容積200%・環状通沿い）。医療・福祉、商業、住宅、投資用地に。Development land for sale in Sapporo, Japan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
---navy:#22305C;--navy-d:#141A2E;--gold:#B0883E;--gold-l:#C49A4E;
---cream:#FAF7F1;--cream2:#F4EFE5;--paper:#FFFFFF;
---ink:#1E2024;--g7:#43474E;--g6:#6A6E76;--g5:#8C9098;--g4:#AEB1B7;
---line:#E9E3D6;
---jp:'Noto Sans JP',sans-serif;--en:'Cormorant Garamond',serif;--es:'Inter',sans-serif;}
+--paper:#FFFFFF;--bone:#F5F2EC;--bone2:#ECE7DD;
+--ink:#1A1815;--ink2:#2B2823;--stone:#8A7C68;--stone-d:#6E6354;
+--g6:#6F6A61;--g5:#938D82;--line:#E4DED3;
+--fr:'Fraunces',Georgia,serif;--sj:'Noto Serif JP',serif;
+--jp:'Noto Sans JP',sans-serif;--es:'Inter',sans-serif;}
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:var(--jp);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.85;font-size:15px;overflow-x:hidden;}
 a{color:inherit;text-decoration:none;}
+.wrap{max-width:1280px;margin:0 auto;padding:0 40px;}
+@media(max-width:640px){.wrap{padding:0 22px;}}
 
-/* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.3s;}
-.nav.solid{background:rgba(20,26,46,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);}
-.nav-inner{max-width:1240px;margin:0 auto;padding:0 36px;height:74px;display:flex;align-items:center;justify-content:space-between;}
-.nav-brand{display:flex;align-items:baseline;gap:11px;}
-.nav-brand .w{font-family:var(--en);font-size:28px;font-weight:700;color:var(--gold-l);letter-spacing:1px;line-height:1;}
-.nav-brand .nm{font-size:13.5px;font-weight:700;color:#fff;letter-spacing:1px;}
-.nav-r{display:flex;align-items:center;gap:26px;}
-.nav-r a{font-size:12.5px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1px;}
-.nav-r a.cta{border:1px solid rgba(255,255,255,.4);padding:9px 20px;border-radius:2px;transition:.2s;}
-.nav-r a.cta:hover{background:#fff;color:var(--navy);}
-@media(max-width:680px){.nav-r a.txt{display:none;}.nav-inner{padding:0 22px;}}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;mix-blend-mode:difference;}
+.nav .inner{max-width:1280px;margin:0 auto;padding:26px 40px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-family:var(--fr);font-size:21px;font-weight:500;letter-spacing:3px;color:#fff;}
+.brand small{display:block;font-family:var(--es);font-size:8.5px;letter-spacing:3px;font-weight:600;color:#fff;opacity:.8;margin-top:1px;}
+.nav .menu{display:flex;gap:30px;align-items:center;}
+.nav .menu a{font-family:var(--es);font-size:11.5px;font-weight:600;letter-spacing:1.5px;color:#fff;text-transform:uppercase;}
+@media(max-width:680px){.nav .menu a.hidem{display:none;}.nav .inner{padding:20px 22px;}}
 
-/* HERO */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:url('render-hero.png') center/cover no-repeat;transform:scale(1.04);}
-.hero-ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(15,19,34,.92) 0%,rgba(18,24,44,.74) 46%,rgba(18,24,44,.34) 100%);}
-.hero-ov2{position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,19,34,.7),transparent 40%);}
-.hero-inner{position:relative;max-width:1240px;margin:0 auto;padding:0 36px;width:100%;}
-.hero-ey{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold-l);letter-spacing:4px;text-transform:uppercase;margin-bottom:26px;display:flex;align-items:center;gap:14px;}
-.hero-ey:before{content:"";width:42px;height:1px;background:var(--gold);}
-.hero-h1{font-size:62px;font-weight:300;line-height:1.28;letter-spacing:1px;margin-bottom:14px;}
-.hero-h1 b{font-weight:700;color:var(--gold-l);}
-.hero-en{font-family:var(--en);font-size:25px;font-weight:500;font-style:italic;color:rgba(255,255,255,.78);letter-spacing:1px;margin-bottom:30px;}
-.hero-lead{font-size:15.5px;font-weight:300;color:rgba(255,255,255,.82);line-height:2.05;max-width:560px;margin-bottom:40px;}
-.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
-.hbtn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:2px;font-size:14px;font-weight:700;letter-spacing:.5px;transition:.25s;}
-.hbtn.g{background:var(--gold);color:#fff;}.hbtn.g:hover{background:var(--gold-l);transform:translateY(-2px);}
-.hbtn.o{border:1px solid rgba(255,255,255,.45);color:#fff;}.hbtn.o:hover{background:#fff;color:var(--navy);}
-.hero-scroll{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);font-family:var(--es);font-size:10px;letter-spacing:3px;color:rgba(255,255,255,.6);text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px;}
-.hero-scroll:after{content:"";width:1px;height:36px;background:linear-gradient(rgba(255,255,255,.5),transparent);}
-@media(max-width:760px){.hero-h1{font-size:38px;}.hero-en{font-size:19px;}.hero-ov{background:linear-gradient(0deg,rgba(15,19,34,.94),rgba(18,24,44,.6));}}
+.hero{position:relative;height:100vh;min-height:620px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;}
+.hero .bg{position:absolute;inset:0;background:url('render-hero.png') center/cover no-repeat;animation:slowzoom 18s ease-out forwards;}
+@keyframes slowzoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,24,21,.34) 0%,rgba(26,24,21,.05) 30%,rgba(26,24,21,.66) 100%);}
+.hero .inner{position:relative;width:100%;max-width:1280px;margin:0 auto;padding:0 40px 88px;}
+.hero .ey{font-family:var(--es);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;opacity:.92;margin-bottom:22px;display:flex;align-items:center;gap:14px;}
+.hero .ey:before{content:"";width:40px;height:1px;background:rgba(255,255,255,.7);}
+.hero h1{font-family:var(--sj);font-size:54px;font-weight:500;line-height:1.36;letter-spacing:2px;margin-bottom:18px;}
+.hero .en{font-family:var(--fr);font-style:italic;font-size:23px;font-weight:400;opacity:.9;letter-spacing:.5px;margin-bottom:28px;}
+.hero .cta{display:inline-flex;align-items:center;gap:12px;font-family:var(--es);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:6px;transition:.25s;}
+.hero .cta:hover{gap:20px;}
+.hero .imgnote{position:absolute;right:40px;bottom:20px;font-size:10px;color:rgba(255,255,255,.6);letter-spacing:.5px;}
+@media(max-width:760px){.hero h1{font-size:32px;}.hero .en{font-size:18px;}.hero .inner{padding:0 22px 64px;}.hero .imgnote{right:22px;}}
 
-/* PROPERTIES */
-.props{padding:96px 0;background:var(--cream);}
-.wrap{max-width:1240px;margin:0 auto;padding:0 36px;}
-.sec-head{text-align:center;margin-bottom:56px;}
-.sec-ey{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold);letter-spacing:4px;text-transform:uppercase;margin-bottom:12px;}
-.sec-t{font-size:34px;font-weight:900;color:var(--ink);letter-spacing:1px;}
-.sec-t .n{color:var(--navy);}
-.sec-sub{font-size:14.5px;color:var(--g6);margin-top:14px;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.95;}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
-@media(max-width:900px){.grid{grid-template-columns:1fr;gap:26px;}}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;transition:.3s;box-shadow:0 18px 50px -30px rgba(34,48,92,.4);display:flex;flex-direction:column;}
-.card:hover{transform:translateY(-6px);box-shadow:0 32px 70px -28px rgba(34,48,92,.5);}
-.card-img{position:relative;aspect-ratio:16/10;overflow:hidden;}
-.card-img img{width:100%;height:100%;object-fit:cover;transition:.5s;}
-.card:hover .card-img img{transform:scale(1.06);}
-.card-img .loc{position:absolute;top:16px;left:16px;background:rgba(20,26,46,.82);backdrop-filter:blur(4px);color:#fff;font-size:11px;font-weight:600;letter-spacing:1px;padding:6px 13px;border-radius:2px;}
-.card-img .cg{position:absolute;bottom:12px;right:14px;background:rgba(255,255,255,.86);color:var(--g6);font-size:10px;padding:4px 9px;border-radius:2px;}
-.card-img .price{position:absolute;bottom:16px;left:16px;color:#fff;}
-.card-img .price .pl{font-size:10.5px;letter-spacing:1px;color:rgba(255,255,255,.8);}
-.card-img .price .pv{font-family:var(--en);font-size:34px;font-weight:700;line-height:1;text-shadow:0 2px 18px rgba(0,0,0,.5);}
-.card-img .price .pv .u{font-family:var(--jp);font-size:15px;font-weight:600;}
-.card-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,19,34,.55),transparent 46%);}
-.card-img .loc,.card-img .cg,.card-img .price{z-index:2;}
-.card-body{padding:26px 28px 28px;flex:1;display:flex;flex-direction:column;}
-.card-body .nm{font-size:21px;font-weight:800;color:var(--navy);letter-spacing:.5px;margin-bottom:4px;}
-.card-body .en{font-family:var(--es);font-size:11px;font-weight:600;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;}
-.specs{display:flex;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:18px;}
-.specs div{flex:1;padding:14px 6px;text-align:center;border-right:1px solid var(--line);}
-.specs div:last-child{border-right:none;}
-.specs .v{font-family:var(--en);font-size:24px;font-weight:700;color:var(--navy);line-height:1;}
-.specs .v.jp{font-family:var(--jp);font-size:17px;font-weight:900;}
-.specs .v .u{font-family:var(--jp);font-size:12px;font-weight:600;color:var(--gold);margin-left:2px;}
-.specs .l{font-size:10.5px;color:var(--g6);margin-top:7px;}
-.card-body .desc{font-size:13px;color:var(--g6);line-height:1.85;margin-bottom:20px;flex:1;}
-.card-cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--navy);color:#fff;font-size:14px;font-weight:700;padding:14px;border-radius:3px;transition:.2s;}
-.card:hover .card-cta{background:var(--gold);}
+.intro{padding:104px 0 84px;text-align:center;}
+.intro .ey{font-family:var(--es);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--stone);margin-bottom:22px;}
+.intro h2{font-family:var(--sj);font-size:30px;font-weight:500;line-height:1.7;letter-spacing:1px;margin-bottom:24px;}
+.intro p{max-width:640px;margin:0 auto;font-size:14.5px;color:var(--g6);line-height:2.1;font-weight:300;}
 
-/* ABOUT */
-.about{padding:84px 0;background:var(--navy-d);color:#fff;}
-.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:54px;align-items:center;}
-@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:30px;}}
-.about .ey{font-family:var(--es);font-size:11px;font-weight:700;color:var(--gold-l);letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;}
-.about h2{font-size:27px;font-weight:300;line-height:1.5;margin-bottom:20px;}
-.about h2 b{font-weight:700;color:var(--gold-l);}
-.about p{font-size:14px;color:rgba(255,255,255,.78);line-height:2;font-weight:300;}
-.about-info{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:30px 32px;}
-.about-info .w{font-family:var(--en);font-size:40px;font-weight:700;color:var(--gold-l);line-height:1;margin-bottom:6px;}
-.about-info table{width:100%;border-collapse:collapse;font-size:13px;}
-.about-info th,.about-info td{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1);text-align:left;vertical-align:top;}
-.about-info th{color:rgba(255,255,255,.55);font-weight:500;width:96px;white-space:nowrap;}
-.about-info td{color:#fff;font-weight:400;}
-.about-info td a{color:var(--gold-l);font-weight:600;}
-.about-info tr:last-child th,.about-info tr:last-child td{border-bottom:none;}
+.props{padding:30px 0 110px;}
+.phead{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:50px;}
+.phead h3{font-family:var(--fr);font-size:26px;font-weight:500;letter-spacing:1px;}
+.phead span{font-family:var(--es);font-size:11px;font-weight:600;letter-spacing:2px;color:var(--stone);text-transform:uppercase;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+@media(max-width:860px){.grid{grid-template-columns:1fr;gap:56px;}}
+.card{display:block;color:inherit;}
+.card .imgw{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--bone2);}
+.card .imgw img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1);}
+.card:hover .imgw img{transform:scale(1.05);}
+.card .num{position:absolute;top:20px;left:20px;font-family:var(--fr);font-size:13px;font-weight:600;letter-spacing:2px;color:#fff;mix-blend-mode:difference;}
+.card .loc{position:absolute;top:20px;right:20px;font-family:var(--es);font-size:10.5px;font-weight:600;letter-spacing:1.5px;color:#fff;background:rgba(26,24,21,.5);backdrop-filter:blur(4px);padding:5px 11px;text-transform:uppercase;}
+.card .cg{position:absolute;bottom:12px;right:12px;font-size:9.5px;color:#fff;background:rgba(26,24,21,.45);padding:3px 8px;letter-spacing:.5px;}
+.card .body{padding-top:24px;}
+.card .nm{font-family:var(--sj);font-size:23px;font-weight:500;letter-spacing:.5px;margin-bottom:5px;}
+.card .en{font-family:var(--fr);font-style:italic;font-size:14px;color:var(--stone);margin-bottom:18px;}
+.card .specs{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:16px;}
+.card .specs div{flex:1;padding:15px 4px;border-right:1px solid var(--line);}
+.card .specs div:last-child{border-right:none;}
+.card .specs .v{font-family:var(--fr);font-size:25px;font-weight:500;line-height:1;}
+.card .specs .v.jp{font-family:var(--sj);font-size:18px;font-weight:700;}
+.card .specs .v .u{font-size:12px;font-weight:600;color:var(--stone);margin-left:2px;font-family:var(--jp);}
+.card .specs .l{font-size:10.5px;color:var(--g6);margin-top:7px;letter-spacing:.3px;}
+.card .price{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;}
+.card .price .pl{font-size:11px;color:var(--g6);letter-spacing:1px;}
+.card .price .pv{font-family:var(--fr);font-size:26px;font-weight:600;letter-spacing:.5px;}
+.card .price .pv .u{font-family:var(--jp);font-size:13px;font-weight:600;}
+.card .desc{font-size:13px;color:var(--g6);line-height:1.95;margin-bottom:20px;font-weight:300;}
+.card .more{display:inline-flex;align-items:center;gap:10px;font-family:var(--es);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:.25s;}
+.card:hover .more{gap:18px;color:var(--stone-d);}
 
-/* FOOTER */
-.footer{background:#0F1322;color:rgba(255,255,255,.6);padding:46px 36px;text-align:center;}
-.footer .w{font-family:var(--en);font-size:28px;font-weight:700;color:var(--gold-l);}
-.footer .co{font-size:15px;font-weight:700;color:#fff;margin:6px 0 10px;}
-.footer .i{font-size:12px;line-height:1.95;}
-.footer .i a{color:rgba(255,255,255,.85);font-weight:600;}
-.footer .links{margin:18px 0;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;font-size:12.5px;}
-.footer .links a{color:var(--gold-l);font-weight:600;}
-.footer .cp{font-size:11px;color:rgba(255,255,255,.35);margin-top:16px;}
-.foot-note{max-width:900px;margin:14px auto 0;font-size:10.5px;color:rgba(255,255,255,.32);line-height:1.8;}
+.strip{background:var(--ink);color:#fff;padding:96px 0;}
+.strip .grid2{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;}
+@media(max-width:860px){.strip .grid2{grid-template-columns:1fr;gap:34px;}}
+.strip .ey{font-family:var(--es);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--stone);margin-bottom:18px;}
+.strip h3{font-family:var(--sj);font-size:27px;font-weight:500;line-height:1.6;margin-bottom:22px;}
+.strip p{font-size:14px;color:rgba(255,255,255,.72);line-height:2.05;font-weight:300;}
+.strip p.en{font-family:var(--fr);font-style:italic;font-size:15px;color:rgba(255,255,255,.6);margin-top:18px;}
+.contact-card{border:1px solid rgba(255,255,255,.14);padding:34px 36px;}
+.contact-card .lbl{font-family:var(--es);font-size:10px;font-weight:600;letter-spacing:2px;color:var(--stone);text-transform:uppercase;margin-bottom:18px;}
+.contact-card table{width:100%;border-collapse:collapse;font-size:13px;}
+.contact-card th,.contact-card td{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.12);text-align:left;vertical-align:top;}
+.contact-card th{color:rgba(255,255,255,.5);font-weight:400;width:84px;white-space:nowrap;}
+.contact-card td{color:#fff;font-weight:300;}
+.contact-card td a{color:#fff;border-bottom:1px solid var(--stone);}
+.contact-card tr:last-child th,.contact-card tr:last-child td{border-bottom:none;}
+.contact-card .mail{display:inline-block;margin-top:22px;font-family:var(--es);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,.4);padding:13px 26px;transition:.2s;}
+.contact-card .mail:hover{background:#fff;color:var(--ink);}
+
+.footer{background:var(--bone);padding:46px 40px;text-align:center;color:var(--g6);}
+.footer .links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;font-family:var(--es);font-size:11.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;}
+.footer .links a{color:var(--ink);}
+.footer .i{font-size:11.5px;line-height:1.95;}
+.footer .i a{color:var(--ink);border-bottom:1px solid var(--line);}
+.footer .note{max-width:920px;margin:14px auto 0;font-size:10px;color:var(--g5);line-height:1.8;}
+.footer .cp{font-family:var(--fr);font-size:12px;color:var(--ink);margin-top:18px;letter-spacing:1px;}
 </style>
 </head>
 <body>
 
 <nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="nav-brand"><span class="w">W</span><span class="nm">株式会社ウェルト</span></a>
-    <div class="nav-r">
-      <a href="#properties" class="txt">取扱用地</a>
-      <a href="#about" class="txt">会社情報</a>
-      <a href="mailto:info@tamjump.com" class="cta">お問い合わせ</a>
+  <div class="inner">
+    <a href="#top" class="brand">SAPPORO<small>DEVELOPMENT LAND</small></a>
+    <div class="menu">
+      <a href="#properties" class="hidem">Properties</a>
+      <a href="#contact" class="hidem">Contact</a>
+      <a href="mailto:info@tamjump.com">Inquire</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <div class="hero-bg"></div>
-  <div class="hero-ov"></div>
-  <div class="hero-ov2"></div>
-  <div class="hero-inner">
-    <div class="hero-ey">Selected Development Land · Sapporo</div>
-    <h1 class="hero-h1">札幌の、<b>選ばれた開発用地。</b></h1>
-    <div class="hero-en">Land for what you envision.</div>
-    <p class="hero-lead">医療・福祉、商業、住宅、投資——構想を、そのまま形にできる。札幌市内のまとまった開発用地を、株式会社ウェルトが取り扱っています。</p>
-    <div class="hero-btns">
-      <a href="#properties" class="hbtn g">取扱用地を見る</a>
-      <a href="mailto:info@tamjump.com" class="hbtn o">お問い合わせ</a>
-    </div>
+  <div class="bg"></div>
+  <div class="ov"></div>
+  <div class="inner">
+    <div class="ey">Select Development Land · Sapporo, Japan</div>
+    <h1>札幌の、<br>選ばれた開発用地。</h1>
+    <div class="en">Land for what you envision.</div>
+    <a href="#properties" class="cta">View Properties →</a>
   </div>
-  <a href="#properties" class="hero-scroll">SCROLL</a>
+  <div class="imgnote">Artist's impression（完成予想イメージ・CG）</div>
 </header>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="ey">Sapporo, Hokkaido</div>
+    <h2>構想を、そのまま<br>形にできる土地を。</h2>
+    <p>医療・福祉、商業、住宅、投資——札幌市内の、用途自由度が高いまとまった開発用地を厳選してご紹介します。Curated development land in Sapporo, Japan — for owner-development, leasing, subdivision or fund-led projects.</p>
+  </div>
+</section>
 
 <section class="props" id="properties">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-ey">Properties</div>
-      <div class="sec-t">取扱<span class="n">開発用地</span></div>
-      <div class="sec-sub">いずれも札幌市内の、用途自由度が高いまとまった用地です。ご覧になりたい物件をお選びください。</div>
+    <div class="phead">
+      <h3>Properties</h3>
+      <span>2 Sites · Sapporo</span>
     </div>
     <div class="grid">
 
       <a class="card" href="kyoikudai/">
-        <div class="card-img">
+        <div class="imgw">
           <img src="render-hero.png" alt="あいの里教育大駅前 開発用地">
-          <span class="loc">札幌市北区・南あいの里</span>
+          <span class="num">01</span>
+          <span class="loc">Kita-ku · Ainosato</span>
           <span class="cg">完成予想イメージ（CG）</span>
-          <span class="price"><span class="pl">販売価格</span><br><span class="pv">¥130,000,000</span></span>
         </div>
-        <div class="card-body">
+        <div class="body">
           <div class="nm">あいの里教育大駅前 開発用地</div>
-          <div class="en">Ainosato-Kyoikudai Station</div>
+          <div class="en">Ainosato-Kyoikudai Station Front</div>
           <div class="specs">
             <div><div class="v">1<span class="u">分</span></div><div class="l">JR駅 徒歩</div></div>
             <div><div class="v">300<span class="u">%</span></div><div class="l">容積率</div></div>
             <div><div class="v">579<span class="u">坪</span></div><div class="l">敷地（約）</div></div>
           </div>
+          <div class="price"><span class="pl">販売価格 / Price</span><span class="pv">¥130,000,000</span></div>
           <div class="desc">JR「あいの里教育大」駅 南口至近。所有権・更地・約579坪。介護／医療、商業、住宅、投資まで対応できる駅前のまとまった用地です。</div>
-          <span class="card-cta">物件を見る →</span>
+          <span class="more">View Property →</span>
         </div>
       </a>
 
       <a class="card" href="hachiken/">
-        <div class="card-img">
+        <div class="imgw">
           <img src="hachiken/render-hero.png" alt="八軒6条東5丁目 開発用地">
-          <span class="loc">札幌市西区・八軒</span>
+          <span class="num">02</span>
+          <span class="loc">Nishi-ku · Hachiken</span>
           <span class="cg">完成予想イメージ（CG）</span>
-          <span class="price"><span class="pl">販売価格</span><br><span class="pv">応談</span></span>
         </div>
-        <div class="card-body">
+        <div class="body">
           <div class="nm">八軒6条東5丁目 開発用地</div>
           <div class="en">Hachiken · Kanjo-dori Frontage</div>
           <div class="specs">
@@ -192,8 +183,9 @@ a{color:inherit;text-decoration:none;}
             <div><div class="v">200<span class="u">%</span></div><div class="l">容積率</div></div>
             <div><div class="v">535<span class="u">坪</span></div><div class="l">敷地（約・4筆）</div></div>
           </div>
+          <div class="price"><span class="pl">販売価格 / Price</span><span class="pv">応談<span class="u"> / On request</span></span></div>
           <div class="desc">環状通（道道下手稲札幌線）に接道する近隣商業・約535坪の一団地。医療・福祉、店舗・商業、住宅・複合開発に。JR「八軒」駅 徒歩圏。</div>
-          <span class="card-cta">物件を見る →</span>
+          <span class="more">View Property →</span>
         </div>
       </a>
 
@@ -201,48 +193,48 @@ a{color:inherit;text-decoration:none;}
   </div>
 </section>
 
-<section class="about" id="about">
+<section class="strip" id="contact">
   <div class="wrap">
-    <div class="about-grid">
+    <div class="grid2">
       <div>
-        <div class="ey">About</div>
-        <h2>札幌のまちに、<b>次の使い道</b>を。</h2>
-        <p>株式会社ウェルトは、札幌市内の開発用地の媒介・提案を行っています。用途地域・規模・接道といった土地のポテンシャルを丁寧に整理し、事業者・デベロッパー・投資家の構想に合わせてご提案します。物件のご相談・現地のご案内も承ります。</p>
+        <div class="ey">For Developers, Operators &amp; Investors</div>
+        <h3>札幌のまちに、<br>次の使い道を。</h3>
+        <p>用途地域・規模・接道といった土地のポテンシャルを整理し、事業者・デベロッパー・投資家の構想に合わせてご提案します。物件のご相談・現地のご案内、海外からのお問い合わせも承ります。</p>
+        <p class="en">We welcome inquiries from overseas investors and funds.</p>
       </div>
-      <div class="about-info">
-        <div class="w">W</div>
+      <div class="contact-card">
+        <div class="lbl">Inquiries · お問い合わせ</div>
         <table>
-          <tr><th>会社名</th><td>株式会社ウェルト（WELT Co., Ltd.）</td></tr>
-          <tr><th>所在地</th><td>〒060-0061 札幌市中央区南1条西11丁目1 みたか南一ビル</td></tr>
-          <tr><th>TEL / FAX</th><td>011-212-1601 ／ 011-212-1602</td></tr>
-          <tr><th>担当</th><td>大下 甚（お問い合わせ：<a href="mailto:info@tamjump.com">info@tamjump.com</a>）</td></tr>
-          <tr><th>免許番号</th><td>宅地建物取引業 北海道知事 石狩(3)第8339号</td></tr>
-          <tr><th>取引態様</th><td>媒介</td></tr>
+          <tr><th>Email</th><td><a href="mailto:info@tamjump.com">info@tamjump.com</a></td></tr>
+          <tr><th>担当</th><td>大下 甚 / Jin Oshita</td></tr>
+          <tr><th>取扱</th><td>株式会社ウェルト（<a href="http://www.welt2015.co.jp" target="_blank" rel="noopener">welt2015.co.jp</a>）</td></tr>
+          <tr><th>免許</th><td>宅地建物取引業 北海道知事 石狩(3)第8339号</td></tr>
+          <tr><th>取引態様</th><td>媒介 / Brokerage</td></tr>
         </table>
+        <a class="mail" href="mailto:info@tamjump.com">Send Inquiry →</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="w">W</div>
-  <div class="co">株式会社ウェルト</div>
   <div class="links">
-    <a href="kyoikudai/">あいの里教育大駅前 開発用地</a>
-    <a href="hachiken/">八軒6条東5丁目 開発用地</a>
-    <a href="mailto:info@tamjump.com">お問い合わせ</a>
+    <a href="kyoikudai/">あいの里教育大駅前</a>
+    <a href="hachiken/">八軒6条東5丁目</a>
+    <a href="mailto:info@tamjump.com">Contact</a>
   </div>
   <div class="i">
-    〒060-0061 北海道札幌市中央区南1条西11丁目1 みたか南一ビル　／　TEL 011-212-1601<br>
-    宅地建物取引業 北海道知事 石狩(3)第8339号　／　取引態様：媒介
+    取扱不動産会社：株式会社ウェルト ／ 札幌市中央区南1条西11丁目1 みたか南一ビル ／ <a href="http://www.welt2015.co.jp" target="_blank" rel="noopener">welt2015.co.jp</a><br>
+    宅地建物取引業 北海道知事 石狩(3)第8339号 ／ 取引態様：媒介
   </div>
-  <p class="foot-note">※ 掲載の画像は完成予想イメージ（CG）を含みます。建物の形状・規模・配置、土地の区画、前面道路、周辺の建物・街並み等は実際とは異なり、現況に存しないものを含みます。価格・面積・法令上の制限等は現時点の情報・計画上の想定に基づくもので、最新・正確な内容は各物件ページおよび取扱会社にてご確認ください。</p>
-  <div class="cp">&copy; 2026 株式会社ウェルト All Rights Reserved.</div>
+  <p class="note">※ 掲載の画像は完成予想イメージ（CG）を含みます。建物の形状・規模・配置、土地の区画、前面道路、周辺の建物・街並み等は実際とは異なり、現況に存しないものを含みます。価格・面積・法令上の制限等は現時点の情報・計画上の想定に基づくもので、最新・正確な内容は各物件ページおよび取扱会社にてご確認ください。</p>
+  <div class="cp">Sapporo Development Land · 2026</div>
 </footer>
 
 <script>
 window.addEventListener('scroll',function(){
-  document.getElementById('nav').classList.toggle('solid', window.scrollY>40);
+  var n=document.getElementById('nav');
+  n.style.mixBlendMode = window.scrollY>window.innerHeight-120 ? 'normal' : 'difference';
 });
 </script>
 </body>
