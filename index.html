@@ -125,6 +125,9 @@ a{color:inherit;text-decoration:none;}
 .step p{font-size:12.5px;color:var(--g6);line-height:1.9;font-weight:300;}
 .step .pill{display:inline-block;margin-top:12px;font-family:var(--es);font-size:9.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border:1px solid var(--line);color:var(--stone-d);}
 .step .pill.gate{border-color:var(--stone);color:var(--stone-d);}
+.step{transition:background .2s;}
+.step:hover{background:var(--bone);}
+.step:hover h4{color:var(--stone-d);}
 .dev .cta-row{display:flex;gap:14px;justify-content:center;margin-top:48px;flex-wrap:wrap;}
 .btn{font-family:var(--es);font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:15px 32px;transition:.25s;display:inline-flex;align-items:center;gap:10px;}
 .btn.fill{background:var(--ink);color:#fff;}
@@ -280,30 +283,30 @@ a{color:inherit;text-decoration:none;}
     <h2>開発を、設計する。</h2>
     <p class="lead">物件で掴み、その土地・事業を「どう建て、どう持つか」まで試算する。土地を売るだけの仲介ではなく、開発シミュレーションと財務設計まで地続きでつなぐ——ここが私たちの差です。</p>
     <div class="flow">
-      <div class="step">
+      <a class="step" href="#properties">
         <div class="n">01</div>
         <h4>物件・案件</h4>
         <p>開発用地、または介護・医療のM&amp;A案件を選ぶ。すべての起点。</p>
         <span class="pill">公開</span>
-      </div>
-      <div class="step">
+      </a>
+      <a class="step" href="register.html">
         <div class="n">02</div>
         <h4>開発シミュレーション</h4>
         <p>用途地域・容積から事業規模・概算事業費・収支を試算。簡易はどなたでも。</p>
         <span class="pill">簡易は無料</span>
-      </div>
-      <div class="step">
+      </a>
+      <a class="step" href="hearing/">
         <div class="n">03</div>
         <h4>ヒアリング</h4>
         <p>規模・要件・資金計画など条件を整理し、計画の精度を上げる。</p>
         <span class="pill">相談</span>
-      </div>
-      <div class="step">
+      </a>
+      <a class="step" href="register.html">
         <div class="n">04</div>
         <h4>見積・財務設計</h4>
         <p>事業費見積に加え、BS影響・リース仕訳まで。持ち方の出口を設計。</p>
         <span class="pill gate">会員</span>
-      </div>
+      </a>
     </div>
     <div class="cta-row">
       <a href="register.html" class="btn fill">開発シミュレーションを試す &rarr;</a>
